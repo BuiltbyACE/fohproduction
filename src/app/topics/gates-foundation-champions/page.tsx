@@ -317,7 +317,7 @@ export default function TopicGatesFoundationChampions() {
           photos={GALLERY}
         />
 
-        <RelatedTopics related={[TOPICS[3], TOPICS[6]]} />
+        <RelatedTopics related={[TOPICS[2], TOPICS[5]]} />
 
         <TopicCta message="Your support helps grassroots champions carry Garissa’s experience to the tables where policy is written." />
       </main>

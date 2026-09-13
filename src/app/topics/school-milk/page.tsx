@@ -82,13 +82,6 @@ const GALLERY: {
       "One of the photographs from the post announcing the ten-week milk program.",
   },
   {
-    src: "/images/D1SfeoJXgAA2tlP.jpg",
-    alt: "A photograph from 10 March 2019",
-    tag: "10 Mar 2019 · verify",
-    caption:
-      "Days before the milk program post — likely the same project, but confirm against the original post.",
-  },
-  {
     src: "/images/D1MhicqW0AAiDH_.jpg",
     alt: "A photograph from 9 March 2019",
     tag: "9 Mar 2019 · verify",
@@ -247,11 +240,11 @@ export default function TopicSchoolMilk() {
               The milk program, <em>in frames.</em>
             </>
           }
-          note="Seven photographs from March 2019. Captions marked “verify” predate the confirmed post — click each photo to view it full screen."
+          note="Six photographs from March 2019. Captions marked “verify” predate the confirmed post — click each photo to view it full screen."
           photos={GALLERY}
         />
 
-        <RelatedTopics related={[TOPICS[1], TOPICS[8]]} />
+        <RelatedTopics related={[TOPICS[1], TOPICS[7]]} />
 
         <TopicCta message="Your support helps a glass of milk reach a pupil who might otherwise miss school — and miss a year." />
       </main>

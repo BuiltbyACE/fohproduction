@@ -300,7 +300,7 @@ export default function TopicMenstrualHealth() {
           ]}
         />
 
-        <RelatedTopics related={[TOPICS[0], TOPICS[2]]} />
+        <RelatedTopics related={[TOPICS[0], TOPICS[8]]} />
 
         <TopicCta message="Your support funds dignity kits, school supplies and menstrual education for Garissa’s girls." />
       </main>

@@ -212,7 +212,7 @@ export default function TopicWomensAward() {
           </div>
         </section>
 
-        <RelatedTopics related={[TOPICS[0], TOPICS[2]]} />
+        <RelatedTopics related={[TOPICS[0], TOPICS[6]]} />
 
         <TopicCta message="Every recognition is a reminder of what the movement still needs — your support to keep going." />
       </main>

@@ -349,7 +349,7 @@ export default function TopicOkoaMamaBegins() {
           photos={GALLERY}
         />
 
-        <RelatedTopics related={[TOPICS[0], TOPICS[5]]} />
+        <RelatedTopics related={[TOPICS[0], TOPICS[4]]} />
 
         <TopicCta message="Your support grows the initiative that began as a workshop — Okoa Mama na Mtoto, from planning table to delivery room." />
       </main>

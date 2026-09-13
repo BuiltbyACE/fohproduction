@@ -310,7 +310,7 @@ export default function TopicWomenOfFaith() {
           photos={GALLERY}
         />
 
-        <RelatedTopics related={[TOPICS[0], TOPICS[4]]} />
+        <RelatedTopics related={[TOPICS[0], TOPICS[3]]} />
 
         <TopicCta message="Your support stands beside the women of faith carrying maternal and newborn health into every Garissa congregation." />
       </main>

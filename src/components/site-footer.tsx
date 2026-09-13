@@ -83,17 +83,10 @@ export default function SiteFooter() {
           </div>
         </div>
         <div className="foot-bottom">
-          <span className="reg">Reg. No. GSA//HC/G/CD/2B/034 · Est. 2017</span>
           <span>© 2026 Fountain of Hope. Stories © Fountain of Hope.</span>
-          <a
-            className="df"
-            href="https://deerflow.tech"
-            target="_blank"
-            rel="noopener"
-            title="Created by Deerflow"
-          >
-            <span className="heart">♥</span> Created by Deerflow
-          </a>
+          <span className="df">
+            <span className="heart">♥</span> Created by safaristack solutions
+          </span>
         </div>
       </div>
     </footer>

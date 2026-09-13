@@ -290,7 +290,7 @@ export default function TopicOkoaMama() {
           </div>
         </section>
 
-        <RelatedTopics related={[TOPICS[1], TOPICS[2]]} />
+        <RelatedTopics related={[TOPICS[1], TOPICS[3]]} />
 
         <TopicCta message="Every meeting, every radio message, every faith gathering is a step toward the day no mother or child is left behind." />
       </main>

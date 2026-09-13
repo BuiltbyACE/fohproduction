@@ -221,8 +221,8 @@ export default function Home() {
               </div>
               <div className="fi fa-sm">
                 <Image
-                  src="/images/GqpdGYJXcAAivls.jpg"
-                  alt="Fardosa Osman, founder of Fountain of Hope"
+                  src="/images/Ds7ClYGW0AAolQn.jpg"
+                  alt="At the Garissa Child Protection Unit, November 2018"
                   fill
                   sizes="18vw"
                   loading="lazy"
@@ -267,7 +267,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="founder-src">
-                Photographs shared on Fountain of Hope’s own timeline
+                Photographs from Fountain of Hope’s own timeline — a visit to
+                the Garissa Child Protection Unit · 26 Nov 2018
               </div>
             </Reveal>
           </div>

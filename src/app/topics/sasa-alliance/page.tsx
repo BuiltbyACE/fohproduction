@@ -351,7 +351,7 @@ export default function TopicSasaAlliance() {
           photos={GALLERY}
         />
 
-        <RelatedTopics related={[TOPICS[4], TOPICS[0]]} />
+        <RelatedTopics related={[TOPICS[3], TOPICS[0]]} />
 
         <TopicCta message="Your support helps a national commitment land where it matters — in the health of Garissa's mothers and newborns." />
       </main>

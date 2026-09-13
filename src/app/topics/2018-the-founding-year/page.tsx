@@ -252,7 +252,7 @@ export default function Topic2018FoundingYear() {
           photos={GALLERY}
         />
 
-        <RelatedTopics related={[TOPICS[1], TOPICS[7]]} />
+        <RelatedTopics related={[TOPICS[1], TOPICS[6]]} />
 
         <TopicCta message="The founding year is where every impact story since began — your support keeps the archive, and the work, growing." />
       </main>

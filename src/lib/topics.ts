@@ -110,4 +110,34 @@ export const TOPICS: Topic[] = [
     image: "/images/GNKt-HEWkAAT0d-.jpg",
     alt: "Grassroots women health champions at the newly opened Bill & Melinda Gates Foundation Kenya office",
   },
+  {
+    tag: "Health · Gender-based violence",
+    title: "A signature against gender-based violence in Garissa",
+    navLabel: "GBV MoU · 2018",
+    description:
+      "Fountain of Hope witnessed the signing of an MoU between the County Government of Garissa and the National Government on Gender-Based Violence, at the Garissa Child Protection Unit — 26 November 2018.",
+    href: "/topics/gbv-mou-signing",
+    image: "/images/Ds7Aa2bWoAAmftC.jpg",
+    alt: "The signing of an MoU on gender-based violence at the Garissa Child Protection Unit",
+  },
+  {
+    tag: "Health · Mother & child",
+    title: "Porridge flour and Mackintosh covers for the wards of Garissa",
+    navLabel: "Referral Hospital · Donation",
+    description:
+      "On 20 April 2018, the Garissa community joined Fountain of Hope in donating Mackintosh bed covers and porridge flour to the Maternity and Pediatric Wards at Garissa Referral Hospital.",
+    href: "/topics/maternity-wards-donation",
+    image: "/images/DbN55PyW0AASg_Q.jpg",
+    alt: "Mackintosh bed covers and porridge flour donated to the Maternity and Pediatric Wards at Garissa Referral Hospital",
+  },
+  {
+    tag: "Health · Menstrual hygiene",
+    title: "A holistic approach in advocacy of menstrual hygiene",
+    navLabel: "UNDP Kenya · MHM",
+    description:
+      "An exhilarating moment — Fountain of Hope at UNDP Kenya for a Holistic Approach in Advocacy of Menstrual Hygiene Management, 30 April 2018.",
+    href: "/topics/undp-mhm-advocacy",
+    image: "/images/DcAcKzhWAAIdprk.jpg",
+    alt: "Fountain of Hope at UNDP Kenya for a Holistic Approach in Advocacy of Menstrual Hygiene Management",
+  },
 ];

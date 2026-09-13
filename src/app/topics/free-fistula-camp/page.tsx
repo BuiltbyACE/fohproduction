@@ -320,7 +320,7 @@ export default function TopicFreeFistulaCamp() {
           photos={GALLERY}
         />
 
-        <RelatedTopics related={[TOPICS[4], TOPICS[6]]} />
+        <RelatedTopics related={[TOPICS[3], TOPICS[5]]} />
 
         <TopicCta message="Your support funds the care and prevention that end obstetric fistula — one mother, one surgery, one awareness conversation at a time." />
       </main>
