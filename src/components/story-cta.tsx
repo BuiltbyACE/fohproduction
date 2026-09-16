@@ -2,18 +2,22 @@ import Reveal from "./reveal";
 import SupportAction from "./support-action";
 import { HeartIcon } from "./icons";
 
-export default function TopicCta({ message }: { message: string }) {
+export default function StoryCta() {
   return (
     <section className="cta">
       <Reveal className="cta-in">
-        <span className="eyebrow">Support the work</span>
+        <span className="eyebrow">Get involved</span>
         <h2>
-          Stand with the women who <em>lead this change.</em>
+          Be part of <em>what comes next.</em>
         </h2>
-        <p>{message}</p>
+        <p>
+          Your support funds health workers, school supplies and livelihoods
+          for some of Kenya’s most vulnerable communities — and keeps this
+          story moving.
+        </p>
         <div className="ctas">
           <SupportAction type="donate" className="btn btn--pink">
-            Donate now
+            Support our work
             <HeartIcon />
           </SupportAction>
           <SupportAction type="partner" className="btn btn--ghost">

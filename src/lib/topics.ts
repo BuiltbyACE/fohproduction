@@ -22,7 +22,7 @@ export const TOPICS: Topic[] = [
   {
     tag: "Education · Girl-child retention",
     title:
-      "Why a girl in Garissa should never miss school because she cannot afford a pad",
+      "Why a girl in northern counties should never miss school because she cannot afford a pad",
     navLabel: "Girls & education",
     description:
       "Menstrual health support, dignity kits and school advocacy that keep Garissa’s girls learning.",
@@ -32,7 +32,7 @@ export const TOPICS: Topic[] = [
   },
   {
     tag: "Recognition · Women’s health",
-    title: "The award for the health of Garissa’s women",
+    title: "Award for Fountain of Hope in advocacy family planning 2030",
     navLabel: "Women’s health award",
     description:
       "A moment of recognition for a movement that belongs to the women who carry it — and the work it represents.",
@@ -52,7 +52,7 @@ export const TOPICS: Topic[] = [
   },
   {
     tag: "Health · Community advocacy",
-    title: "The women of faith on the front line",
+    title: "Women of faith on the frontline",
     navLabel: "Women of faith",
     description:
       "Religious women leaders implement the second activity of Okoa Mama na Mtoto — advocating maternal and newborn health across Garissa.",
@@ -139,5 +139,15 @@ export const TOPICS: Topic[] = [
     href: "/topics/undp-mhm-advocacy",
     image: "/images/DcAcKzhWAAIdprk.jpg",
     alt: "Fountain of Hope at UNDP Kenya for a Holistic Approach in Advocacy of Menstrual Hygiene Management",
+  },
+  {
+    tag: "Health · Child spacing & advocacy",
+    title: "The child-spacing advocacy journey in Garissa",
+    navLabel: "Child spacing · Advocacy",
+    description:
+      "An FP2020 Rapid Response Mechanism project, supported by the United Nations Foundation, used culture- and faith-sensitive advocacy on child spacing in a county whose modern contraceptive prevalence rate stood at 5.5% — reporting child-spacing service uptake of 11% by 2022.",
+    href: "/topics/family-planning",
+    image: "/images/family-planning-1.jpg",
+    alt: "Family-planning advocacy material for the Garissa child-spacing story",
   },
 ];

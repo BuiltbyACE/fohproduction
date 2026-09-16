@@ -12,7 +12,7 @@ import { AwardIcon, InfoIcon, MapPinIcon } from "@/components/icons";
 export const metadata = makeMetadata({
   path: "/topics/womens-award",
   title:
-    "The award for the health of Garissa's women | Fountain of Hope",
+    "Award for Fountain of Hope in advocacy family planning 2030 | Fountain of Hope",
   description:
     "A moment of recognition for Fountain of Hope's work in women's health — and the movement of women who carry it forward across Garissa.",
 });
@@ -38,7 +38,7 @@ export default function TopicWomensAward() {
               alt: "The field work behind the recognition — the Free Fistula Camp, Garissa 2019",
             },
           ]}
-          ariaLabel="Recognition for the health of Garissa's women"
+          ariaLabel="Award for Fountain of Hope in advocacy family planning 2030"
           crumbsHere="Women&rsquo;s health award"
           kickerTop="RECOGNITION · WOMEN'S HEALTH"
           kickerSub="Garissa County"

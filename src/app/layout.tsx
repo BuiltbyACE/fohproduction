@@ -6,6 +6,7 @@ import {
   SITE_BLURB,
   logoUrl,
 } from "@/lib/seo";
+import { SupportModalProvider } from "@/components/support-modal";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -95,7 +96,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             }),
           }}
         />
-        {children}
+        <SupportModalProvider>{children}</SupportModalProvider>
       </body>
     </html>
   );

@@ -14,7 +14,7 @@ const SLIDES = [
     alt: "Fountain of Hope — photograph from the field in Garissa County",
   },
   {
-    src: "/images/homehero3.jpg",
+    src: "/images/Gtu4Ql-WcAABazj.jpg",
     alt: "Fountain of Hope — photograph from the field in Garissa County",
   },
 ];

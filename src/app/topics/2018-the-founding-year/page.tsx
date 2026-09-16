@@ -30,7 +30,7 @@ const FRAMES = [
     src: "/images/DcAezspXUAAhJxh.jpg",
     alt: "A photograph from 30 April 2018",
     caption:
-      "One of two photographs from the same day — a courtesy call and menstrual hygiene advocacy. Caption pending confirmation.",
+      "The second photograph from 30 April 2018 — caption pending team confirmation against the original post.",
     meta: "Apr 2018 · verify",
   },
   {
@@ -50,24 +50,24 @@ const GALLERY: {
 }[] = [
   {
     src: "/images/DbN55PyW0AASg_Q.jpg",
-    alt: "Bed-covers and porridge flour donated for Garissa Referral Hospital",
+    alt: "Mackintosh and porridge flour donated for Garissa Referral Hospital",
     tag: "20 Apr 2018",
     caption:
-      "Bed-covers and porridge flour donated for the Maternity and Paediatric wards of Garissa Referral Hospital — one of the founding year’s earliest acts of care.",
+      "Mackintosh and porridge flour donated for the Maternity and Paediatric wards of Garissa Referral Hospital.",
   },
   {
     src: "/images/DcAcKzCWkAUtU7z.jpg",
-    alt: "A photograph from 30 April 2018",
+    alt: "First lady county association advocating for menstrual health management",
     tag: "30 Apr 2018 · verify",
     caption:
-      "30 April 2018 held two moments — a courtesy call from the Garissa Muslim Youth Association on Ramadan preparations, and menstrual hygiene advocacy at UNDP Kenya. Which photograph records which is pending confirmation.",
+      "First lady county association advocating for menstrual health management, child empowerment program advocacy at UNDP KE.",
   },
   {
     src: "/images/DcAezspXUAAhJxh.jpg",
     alt: "A photograph from 30 April 2018",
     tag: "30 Apr 2018 · verify",
     caption:
-      "The second photograph from 30 April 2018 — same two possibilities as above, pending confirmation.",
+      "The second photograph from 30 April 2018 — caption pending team confirmation against the original post.",
   },
   {
     src: "/images/De6fJOcWkAAp3oA.jpg",
@@ -85,10 +85,10 @@ const GALLERY: {
   },
   {
     src: "/images/DlEck4UWsAAgsjw.jpg",
-    alt: "A photograph from August 2018",
+    alt: "Fountain of Hope and Garissa government donating sanitary towels for girls in Garissa county",
     tag: "20 Aug 2018 · verify",
     caption:
-      "From the August 2018 archive — caption pending team confirmation against the original post.",
+      "Fountain of Hope partners with Garissa government to donate sanitary towels for girls in Garissa county.",
   },
   {
     src: "/images/DmpP4QkXsAALI2R.jpg",
@@ -98,32 +98,11 @@ const GALLERY: {
       "From the September 2018 archive — caption pending team confirmation against the original post.",
   },
   {
-    src: "/images/DnESFVBWwAI9HGd.jpg",
-    alt: "A photograph from mid-September 2018",
-    tag: "14 Sep 2018 · verify",
-    caption:
-      "From the September 2018 archive — caption pending team confirmation against the original post.",
-  },
-  {
-    src: "/images/DqbKvGkX4AAcycM.jpg",
-    alt: "A photograph from late October 2018",
-    tag: "26 Oct 2018 · verify",
-    caption:
-      "From the October 2018 archive — caption pending team confirmation against the original post.",
-  },
-  {
-    src: "/images/DqqexzQWkAAc-om.jpg",
-    alt: "A photograph from October 2018",
-    tag: "29 Oct 2018 · verify",
-    caption:
-      "The first of two photographs from 29 October 2018 — caption pending team confirmation against the original post.",
-  },
-  {
     src: "/images/DqrjMGdXgAArKtB.jpg",
-    alt: "A photograph from October 2018",
+    alt: "A photo booth showcasing Kangaroo mother care with the Garissa Health team",
     tag: "29 Oct 2018 · verify",
     caption:
-      "The second photograph from 29 October 2018 — caption pending team confirmation against the original post.",
+      "A photo booth that shows Fountain of Hope partnering with the Garissa Health team to showcase how Kangaroo mother breastfeeding has improved bonding in newborn health.",
   },
 ];
 
@@ -248,7 +227,7 @@ export default function Topic2018FoundingYear() {
               The founding year, <em>frame by frame.</em>
             </>
           }
-          note="Eleven photographs from 2018. Captions marked “verify” await the team’s confirmation against the original posts. Click each one to view it full screen."
+          note="Eight photographs from 2018. Captions marked “verify” await the team’s confirmation against the original posts. Click each one to view it full screen."
           photos={GALLERY}
         />
 

@@ -18,7 +18,7 @@ import {
 export const metadata = makeMetadata({
   path: "/topics/women-of-faith",
   title:
-    "Women religious leaders on the front line | Fountain of Hope",
+    "Women of faith on the frontline | Fountain of Hope",
   description:
     "The second Okoa Mama na Mtoto activity: religious women leaders advocate maternal and newborn health across Garissa — 4 May 2025.",
 });
@@ -106,7 +106,7 @@ export default function TopicWomenOfFaith() {
           kickerSub="4 May 2025"
           title={
             <>
-              The women of faith on <em>the front line.</em>
+              Women of faith on <em>the frontline.</em>
             </>
           }
           sub="After the planning came the people: the second activity of Okoa Mama na Mtoto was implemented with religious women leaders — advocating maternal and newborn health, because in Garissa the calendar and the congregation meet."

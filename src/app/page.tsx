@@ -1,16 +1,18 @@
 import Image from "next/image";
+import Link from "next/link";
 import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
 import HeroCarousel from "@/components/hero-carousel";
 import Stats from "@/components/stats";
+import HomeImpact from "@/components/home-impact";
+import SupportAction from "@/components/support-action";
 import TopicsSection from "@/components/topic-cards";
 import MoreStories from "@/components/more-topics";
 import {
   ArrowDownIcon,
-  EducationIcon,
-  HealthIcon,
+  ArrowRightIcon,
 } from "@/components/icons";
 
 const PARTNERS = [
@@ -72,7 +74,7 @@ export default function Home() {
               <span>One story, told topic by topic</span>
             </div>
             <h1>
-              No mother, no child, <em>no girl, left behind.</em>
+              No mother <em>should die while giving birth.</em>
             </h1>
             <p className="hero-sub">
               Fountain of Hope is a woman-led community organization working
@@ -85,9 +87,9 @@ export default function Home() {
                 Explore the topics
                 <ArrowDownIcon />
               </a>
-              <a className="btn btn--ghost" href="#about">
+              <Link className="btn btn--ghost" href="/our-story">
                 Our story
-              </a>
+              </Link>
             </div>
 
             <Reveal className="fieldnote">
@@ -118,7 +120,7 @@ export default function Home() {
             <Reveal className="topic-head">
               <span className="eyebrow eyebrow--light">The topics</span>
               <h2 className="h2">
-                Real stories, <em>told clearly.</em>
+                Real stories
               </h2>
               <p>
                 Born from our work and our field notes. Click a topic to read
@@ -138,49 +140,27 @@ export default function Home() {
               <span className="eyebrow eyebrow--paper">Our story</span>
               <h2>
                 Founded by a daughter of Garissa,{" "}
-                <em>for the women of Garissa.</em>
+                <em>for the women of Northern Eastern.</em>
               </h2>
               <p className="lede">
                 Fardosa Osman founded Fountain of Hope in{" "}
-                <strong>2017</strong> to give the women of Garissa County a
-                platform to advocate for health, education and community
-                resilience. Under her leadership, the organization has grown
-                into a community-rooted NGO — engaging women, men, youth and
-                persons with disability — with a <strong>2024–2029 strategic
-                plan</strong> built on four pillars: health, education,
-                community resilience, and small enterprise development.
+                <strong>2017</strong> to give women and persons with disability
+                of Garissa County a platform to advocate for health, education
+                and community resilience. Under her leadership, the organization
+                has grown into a community rooted based organisation — engaging
+                women, men, youth and persons with disability — with a{" "}
+                <strong>2024–2029 strategic plan</strong> built on three
+                pillars: health, education, and community resilience.
               </p>
-              <div className="about-feats">
-                <div className="feat">
-                  <span className="ic">
-                    <HealthIcon />
-                  </span>
-                  <div>
-                    <h4>Health</h4>
-                    <p>
-                      Maternal and newborn survival through the Okoa Mama na
-                      Mtoto initiative, faith networks and radio advocacy.
-                    </p>
-                  </div>
-                </div>
-                <div className="feat">
-                  <span className="ic">
-                    <EducationIcon />
-                  </span>
-                  <div>
-                    <h4>Education</h4>
-                    <p>
-                      Keeping girls in school through menstrual health support,
-                      school libraries and community advocacy.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <Link className="btn btn--navy" href="/our-story">
+                Read the full story
+                <ArrowRightIcon />
+              </Link>
             </Reveal>
             <Reveal className="about-art">
               <Image
-                src="/images/GyucnsFXcAAyiXJ.jpg"
-                alt="Fountain of Hope and Garissa County leadership together"
+                src="/images/hero page better.png"
+                alt="Fountain of Hope — Garissa, Kenya"
                 fill
                 sizes="45vw"
                 loading="lazy"
@@ -189,6 +169,9 @@ export default function Home() {
             </Reveal>
           </div>
         </section>
+
+        {/* ============ TRACK RECORD HIGHLIGHTS ============ */}
+        <HomeImpact />
 
         {/* ============ FOUNDER ============ */}
         <section className="founder" id="founder">
@@ -249,8 +232,7 @@ export default function Home() {
                 <strong style={{ color: "#fff" }}>
                   2024–2029 strategic plan
                 </strong>{" "}
-                built on health, education, community resilience and small
-                enterprise development.
+                built on health, education and community resilience.
               </p>
               <div className="founder-feats">
                 <div className="found-feat">
@@ -262,8 +244,8 @@ export default function Home() {
                   <p>A movement carried by women, for women</p>
                 </div>
                 <div className="found-feat">
-                  <h4>Four pillars</h4>
-                  <p>Health · education · resilience · enterprise</p>
+                  <h4>Three pillars</h4>
+                  <p>Health · education · resilience</p>
                 </div>
               </div>
               <div className="founder-src">
@@ -287,7 +269,10 @@ export default function Home() {
               and keeps this story moving.
             </p>
             <div className="ctas">
-              <a className="btn btn--pink" href="#footer">
+              <SupportAction
+                type="donate"
+                className="btn btn--pink"
+              >
                 Donate now
                 <svg
                   viewBox="0 0 24 24"
@@ -300,10 +285,10 @@ export default function Home() {
                 >
                   <path d="M12 20c-3.5-2.6-6-5.6-6-8.5C6 8.6 8.2 7 10 7c1.3 0 2 .8 2 .8S13.7 7 15 7c1.8 0 4 1.6 4 4.5 0 2.9-2.5 5.9-6 8.5Z" />
                 </svg>
-              </a>
-              <a className="btn btn--ghost" href="#footer">
+              </SupportAction>
+              <SupportAction type="partner" className="btn btn--ghost">
                 Partner with us
-              </a>
+              </SupportAction>
             </div>
           </Reveal>
         </section>

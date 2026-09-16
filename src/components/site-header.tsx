@@ -7,9 +7,9 @@ import { useEffect, useState } from "react";
 import { MenuIcon } from "./icons";
 
 const NAV_ITEMS = [
-  { label: "Topics", hash: "#topics", caption: "Real stories" },
-  { label: "Our story", hash: "#about", caption: "From the ground" },
-  { label: "Contact", hash: "#footer", caption: "Get in touch" },
+  { label: "Topics", href: "#topics", caption: "Real stories" },
+  { label: "Our story", href: "/our-story", caption: "From the ground" },
+  { label: "Contact", href: "#footer", caption: "Get in touch" },
 ];
 
 export default function SiteHeader() {
@@ -24,15 +24,16 @@ export default function SiteHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const anchorHref = (hash: string) => (pathname === "/" ? hash : `/${hash}`);
+  const itemHref = (href: string) =>
+    href.startsWith("#") && pathname !== "/" ? `/${href}` : href;
 
   const onAnchor = (
     event: React.MouseEvent<HTMLAnchorElement>,
-    hash: string
+    href: string
   ) => {
-    if (pathname === "/") {
+    if (pathname === "/" && href.startsWith("#")) {
       event.preventDefault();
-      document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" });
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
     }
     setOpen(false);
   };
@@ -65,9 +66,9 @@ export default function SiteHeader() {
           <div className="nav-links">
             {NAV_ITEMS.map((item) => (
               <Link
-                key={item.hash}
-                href={anchorHref(item.hash)}
-                onClick={(event) => onAnchor(event, item.hash)}
+                key={item.href}
+                href={itemHref(item.href)}
+                onClick={(event) => onAnchor(event, item.href)}
               >
                 {item.label}
               </Link>
@@ -85,7 +86,7 @@ export default function SiteHeader() {
 
           <Link
             className="nav-cta"
-            href={anchorHref("#footer")}
+            href={itemHref("#footer")}
             onClick={(event) => onAnchor(event, "#footer")}
           >
             Support our work
@@ -96,9 +97,9 @@ export default function SiteHeader() {
       <div className={`mobile-menu ${open ? "open" : ""}`}>
         {NAV_ITEMS.map((item) => (
           <Link
-            key={item.hash}
-            href={anchorHref(item.hash)}
-            onClick={(event) => onAnchor(event, item.hash)}
+            key={item.href}
+            href={itemHref(item.href)}
+            onClick={(event) => onAnchor(event, item.href)}
           >
             {item.label}
             <small>{item.caption}</small>

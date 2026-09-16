@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AtIcon, MailIcon, MapPinIcon, PhoneIcon } from "./icons";
+import SupportAction from "./support-action";
 import { TOPICS } from "@/lib/topics";
 
 export default function SiteFooter() {
@@ -46,16 +47,14 @@ export default function SiteFooter() {
             <h5>Get involved</h5>
             <ul>
               <li>
-                <Link href="/#footer">Donate</Link>
+                <SupportAction type="donate" className="foot-btn">
+                  Donate
+                </SupportAction>
               </li>
               <li>
-                <Link href="/#footer">Partner with us</Link>
-              </li>
-              <li>
-                <Link href="/#footer">Sponsorship</Link>
-              </li>
-              <li>
-                <Link href="/#footer">Volunteer</Link>
+                <SupportAction type="partner" className="foot-btn">
+                  Partner with us
+                </SupportAction>
               </li>
             </ul>
           </div>
@@ -69,7 +68,7 @@ export default function SiteFooter() {
               </div>
               <div>
                 <MailIcon />
-                <span>info@fountainofhope.or.ke</span>
+                <span>cflgarissa007@gmail.com</span>
               </div>
               <div>
                 <MapPinIcon />
