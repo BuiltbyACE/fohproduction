@@ -7,7 +7,9 @@ import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
 import RelatedTopics from "@/components/related-topics";
 import TopicCta from "@/components/topic-cta";
+import RecordEvidence from "@/components/record-evidence";
 import { TOPICS } from "@/lib/topics";
+import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 import {
   CalendarIcon,
   HeartIcon,
@@ -318,6 +320,11 @@ export default function TopicFreeFistulaCamp() {
           }
           note="Five photographs from the Free Fistula Camp week. Click each one to view it full screen."
           photos={GALLERY}
+        />
+
+        <RecordEvidence
+          entries={[PORTFOLIO_DATA[8]]}
+          intro="The documented record of the care that stood behind the Free Fistula Camp week."
         />
 
         <RelatedTopics related={[TOPICS[3], TOPICS[5]]} />

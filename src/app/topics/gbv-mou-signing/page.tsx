@@ -7,7 +7,9 @@ import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
 import RelatedTopics from "@/components/related-topics";
 import TopicCta from "@/components/topic-cta";
+import RecordEvidence from "@/components/record-evidence";
 import { TOPICS } from "@/lib/topics";
+import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 import {
   CalendarIcon,
   InfoIcon,
@@ -284,6 +286,11 @@ export default function TopicGbvMouSigning() {
           }
           note="The signing of the MoU on Gender-Based Violence at the Garissa Child Protection Unit, 26 November 2018."
           photos={GALLERY}
+        />
+
+        <RecordEvidence
+          entries={[PORTFOLIO_DATA[2], PORTFOLIO_DATA[3]]}
+          intro="The documented record of the Garissa Child Protection Unit — the building where this agreement was signed and where women with young children have a dignified stay — and of the county&apos;s GBV advocacy."
         />
 
         <RelatedTopics related={[TOPICS[7], TOPICS[6]]} />

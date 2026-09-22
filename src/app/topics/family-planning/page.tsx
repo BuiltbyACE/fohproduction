@@ -7,7 +7,9 @@ import TopicHero from "@/components/topic-hero";
 import RelatedTopics from "@/components/related-topics";
 import TopicCta from "@/components/topic-cta";
 import FpImpact from "./fp-impact";
+import RecordEvidence from "@/components/record-evidence";
 import { TOPICS } from "@/lib/topics";
+import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 
 export const metadata = makeMetadata({
   path: "/topics/family-planning",
@@ -1062,6 +1064,11 @@ export default function TopicFamilyPlanning() {
             </div>
           </div>
         </section>
+
+        <RecordEvidence
+          entries={[PORTFOLIO_DATA[0], PORTFOLIO_DATA[15]]}
+          intro="Documented interventions that sit at the heart of the child-spacing and gender-lensed advocacy journey on this page."
+        />
 
         <RelatedTopics related={[TOPICS[4], TOPICS[5]]} />
 

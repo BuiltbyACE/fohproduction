@@ -7,7 +7,9 @@ import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
 import RelatedTopics from "@/components/related-topics";
 import TopicCta from "@/components/topic-cta";
+import RecordEvidence from "@/components/record-evidence";
 import { TOPICS } from "@/lib/topics";
+import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 import {
   CalendarIcon,
   HeartIcon,
@@ -336,6 +338,11 @@ export default function TopicMaternityWardsDonation() {
           }
           note="Four photographs from the donation at Garissa Referral Hospital, 20 April 2018. Click each photo to view it full screen."
           photos={GALLERY}
+        />
+
+        <RecordEvidence
+          entries={[PORTFOLIO_DATA[6]]}
+          intro="The documented record of the mother-and-child ward support carried at Garissa Referral Hospital."
         />
 
         <RelatedTopics related={[TOPICS[7], TOPICS[0]]} />

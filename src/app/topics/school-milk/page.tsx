@@ -7,7 +7,9 @@ import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
 import RelatedTopics from "@/components/related-topics";
 import TopicCta from "@/components/topic-cta";
+import RecordEvidence from "@/components/record-evidence";
 import { TOPICS } from "@/lib/topics";
+import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 import {
   CalendarIcon,
   InfoIcon,
@@ -242,6 +244,11 @@ export default function TopicSchoolMilk() {
           }
           note="Six photographs from March 2019. Captions marked “verify” predate the confirmed post — click each photo to view it full screen."
           photos={GALLERY}
+        />
+
+        <RecordEvidence
+          entries={[PORTFOLIO_DATA[10], PORTFOLIO_DATA[11]]}
+          intro="Two documented records from the same ECD pilot in Garissa&apos;s schools — milk for nutrition during the school day, and incentives that encouraged enrolment."
         />
 
         <RelatedTopics related={[TOPICS[1], TOPICS[7]]} />

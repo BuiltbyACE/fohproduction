@@ -880,68 +880,6 @@ footer .brand { color: #fff }
   .fp-effort { grid-template-columns: 1fr; gap: .3rem }
 }
 
-/* ============ TRACK RECORD (our-story) ============ */
-.tr-filters {
-  display: flex; flex-wrap: wrap; gap: .6rem;
-  margin-bottom: clamp(2rem, 4vw, 3rem);
-}
-.tr-filter {
-  font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
-  padding: .6rem 1.2rem; border-radius: 999px; border: 1px solid var(--line);
-  background: var(--white); color: var(--muted); cursor: pointer;
-  transition: background .3s, color .3s, border-color .3s, box-shadow .3s;
-}
-.tr-filter:hover { border-color: rgba(233, 30, 99, .35); color: var(--ink) }
-.tr-filter--on {
-  background: var(--navy); color: #fff; border-color: var(--navy);
-  box-shadow: 0 4px 16px rgba(8, 27, 99, .2);
-}
-.tr-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem;
-}
-.tr-card {
-  background: var(--white); border: 1px solid var(--line); border-radius: 18px;
-  padding: clamp(1.4rem, 2.5vw, 2rem); display: grid; gap: 1rem; align-content: start;
-  transition: transform .4s var(--ease), box-shadow .4s, border-color .4s;
-}
-.tr-card:hover {
-  transform: translateY(-4px); box-shadow: 0 20px 44px rgba(8, 27, 99, .09);
-  border-color: rgba(233, 30, 99, .3);
-}
-.tr-card-head { display: flex; align-items: center; justify-content: space-between; gap: .8rem; flex-wrap: wrap }
-.tr-date {
-  font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: var(--pink-deep);
-}
-.tr-tags { display: flex; flex-wrap: wrap; gap: .4rem }
-.tr-tag {
-  font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
-  color: var(--navy); background: rgba(8, 27, 99, .06); border: 1px solid rgba(8, 27, 99, .12);
-  padding: .35rem .7rem; border-radius: 999px;
-}
-.tr-title {
-  font-family: var(--serif); font-weight: 500; font-size: clamp(1.15rem, 1.8vw, 1.4rem);
-  color: var(--navy); line-height: 1.2; letter-spacing: -.01em;
-}
-.tr-meta { display: grid; gap: .5rem; padding-top: .8rem; border-top: 1px solid var(--line) }
-.tr-meta-row { display: flex; gap: .6rem; font-size: 13px; line-height: 1.55 }
-.tr-meta-label {
-  font-weight: 700; color: var(--muted); min-width: 110px; flex: none;
-  font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding-top: 1px;
-}
-.tr-meta-value { color: var(--ink) }
-.tr-impact {
-  background: var(--paper-2); border: 1px solid var(--line); border-left: 3px solid var(--pink);
-  border-radius: 12px; padding: 1rem 1.2rem;
-}
-.tr-impact-label {
-  display: block; font-size: 10px; font-weight: 700; letter-spacing: .16em;
-  text-transform: uppercase; color: var(--pink-deep); margin-bottom: .4rem;
-}
-.tr-impact p { font-size: 13.5px; color: var(--ink); line-height: 1.65 }
-.tr-empty {
-  text-align: center; padding: 3rem 0; color: var(--muted); font-size: .95rem;
-}
-
 /* ============ HOME IMPACT ============ */
 .hi {
   padding: clamp(5rem, 9vw, 8.5rem) 0; background: var(--paper-2);
@@ -976,18 +914,13 @@ footer .brand { color: #fff }
 .hi-cta { position: relative; text-align: center; margin-top: clamp(2rem, 4vw, 3rem) }
 
 @media (max-width: 1024px) {
-  .tr-grid { grid-template-columns: 1fr }
   .hi-grid { grid-template-columns: repeat(3, 1fr) }
 }
 @media (max-width: 760px) {
   .hi-grid { grid-template-columns: repeat(2, 1fr) }
-  .tr-meta-row { flex-direction: column; gap: .15rem }
-  .tr-meta-label { min-width: 0 }
 }
 @media (max-width: 500px) {
   .hi-grid { grid-template-columns: 1fr }
-  .tr-filters { gap: .45rem }
-  .tr-filter { font-size: 11px; padding: .5rem .9rem }
 }
 
 /* ============ SUPPORT MODAL ============ */
@@ -1068,3 +1001,57 @@ footer .brand { color: #fff }
 }
 .foot-btn:hover { color: var(--pink-bright) }
 .foot-btn:focus-visible { outline: 2px solid var(--pink); outline-offset: 3px; border-radius: 4px }
+
+/* ============ RECORD EVIDENCE (topic pages) ============ */
+.re {
+  padding: clamp(5rem, 9vw, 8rem) 0; background: var(--paper-2);
+  border-block: 1px solid var(--line);
+}
+.re-head { text-align: center; max-width: 720px; margin: 0 auto clamp(2.4rem, 5vw, 3.5rem) }
+.re-head .eyebrow { justify-content: center; margin-bottom: 1.1rem }
+.re-head h2 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(1.9rem, 3.4vw, 2.8rem);
+  line-height: 1.15; letter-spacing: -.015em; color: var(--navy); margin-top: .6rem;
+}
+.re-head h2 em { font-style: italic; color: var(--pink-deep) }
+.re-head p { color: var(--muted); font-size: .98rem; line-height: 1.7; margin-top: 1rem }
+.re-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 1.2rem;
+}
+.re-card {
+  background: var(--white); border: 1px solid var(--line); border-radius: 18px;
+  padding: clamp(1.4rem, 2.4vw, 2rem); display: grid; gap: 1rem; align-content: start;
+}
+.re-tax { display: flex; flex-wrap: wrap; gap: .45rem }
+.re-tag {
+  font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--pink-deep); background: rgba(233, 30, 99, .07);
+  border: 1px solid rgba(233, 30, 99, .16); padding: .35rem .7rem; border-radius: 999px;
+}
+.re-place {
+  font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--navy); background: rgba(8, 27, 99, .06); border: 1px solid rgba(8, 27, 99, .12);
+  padding: .35rem .7rem; border-radius: 999px;
+}
+.re-title {
+  font-family: var(--serif); font-weight: 500; font-size: clamp(1.2rem, 1.9vw, 1.45rem);
+  color: var(--navy); line-height: 1.25; letter-spacing: -.01em;
+}
+.re-facts { display: grid; gap: .7rem; padding-top: .9rem; border-top: 1px solid var(--line) }
+.re-row { display: grid; grid-template-columns: 110px 1fr; gap: 1rem; font-size: 13.5px; line-height: 1.6 }
+.re-row dt {
+  font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--muted); padding-top: 2px;
+}
+.re-row dd { color: var(--ink) }
+.re-row--impact dt { color: var(--pink-deep) }
+.re-row--impact dd { font-weight: 500 }
+.re-note {
+  text-align: center; color: var(--muted); font-size: 12px; letter-spacing: .04em;
+  margin-top: clamp(1.8rem, 4vw, 2.6rem);
+}
+@media (max-width: 520px) {
+  .re-row { grid-template-columns: 1fr; gap: .15rem }
+  .re-card { padding: 1.25rem }
+}

@@ -9,7 +9,6 @@ import BeliefsSection from "@/components/beliefs-section";
 import WorkHealth from "@/components/work-health";
 import WorkEducation from "@/components/work-education";
 import WorkResilience from "@/components/work-resilience";
-import TrackRecord from "@/components/track-record";
 import AdvocacySection from "@/components/advocacy-section";
 import FounderSection from "@/components/founder-section";
 import FieldGallery from "@/components/field-gallery";
@@ -38,7 +37,6 @@ export default function OurStoryPage() {
         <WorkHealth />
         <WorkEducation />
         <WorkResilience />
-        <TrackRecord />
         <AdvocacySection />
         <FounderSection />
         <FieldGallery />

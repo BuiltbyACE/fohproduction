@@ -8,7 +8,9 @@ import PhotoBand from "@/components/photo-band";
 import Gallery from "@/components/gallery";
 import RelatedTopics from "@/components/related-topics";
 import TopicCta from "@/components/topic-cta";
+import RecordEvidence from "@/components/record-evidence";
 import { TOPICS } from "@/lib/topics";
+import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 import {
   HeartIcon,
   InfoIcon,
@@ -298,6 +300,11 @@ export default function TopicMenstrualHealth() {
                 "The other photograph from 30 April 2018 — the same two possibilities; confirm which is the UNDP Kenya visit.",
             },
           ]}
+        />
+
+        <RecordEvidence
+          entries={[PORTFOLIO_DATA[7], PORTFOLIO_DATA[9]]}
+          intro="The documented record behind Fountain of Hope&apos;s menstrual health and girl-child retention work."
         />
 
         <RelatedTopics related={[TOPICS[0], TOPICS[8]]} />

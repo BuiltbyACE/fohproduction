@@ -1,10 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Link from "next/link";
 import Reveal from "./reveal";
 import { IMPACT_HIGHLIGHTS } from "@/lib/portfolio-data";
-import { ArrowRightIcon } from "./icons";
 
 function CountUp({ to }: { to: number }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -72,13 +70,6 @@ export default function HomeImpact() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal className="hi-cta">
-          <Link className="btn btn--navy" href="/our-story#track-record">
-            View our full track record
-            <ArrowRightIcon />
-          </Link>
-        </Reveal>
       </div>
     </section>
   );
