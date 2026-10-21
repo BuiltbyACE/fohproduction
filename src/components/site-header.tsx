@@ -93,7 +93,6 @@ export default function SiteHeader() {
           >
             Support our work
           </Link>
-        </nav>
       </div>
 
       <div className={`mobile-drawer ${open ? "open" : ""}`}>
