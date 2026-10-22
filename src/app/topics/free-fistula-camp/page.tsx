@@ -13,7 +13,6 @@ import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 import {
   CalendarIcon,
   HeartIcon,
-  InfoIcon,
   MapPinIcon,
 } from "@/components/icons";
 
@@ -200,15 +199,6 @@ export default function TopicFreeFistulaCamp() {
                       <span>Corrective surgery · care · awareness</span>
                     </div>
                   </div>
-                </div>
-                <div className="verify-note">
-                  <InfoIcon />
-                  <span>
-                    <b>Note for the team:</b> captions are drawn from
-                    @Fountain_FOH’s posts (24 May 2019). Confirm photo-to-person
-                    and venue attribution against the originals before
-                    publishing.
-                  </span>
                 </div>
               </Reveal>
             </div>

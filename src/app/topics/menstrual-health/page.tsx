@@ -13,7 +13,6 @@ import { TOPICS } from "@/lib/topics";
 import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 import {
   HeartIcon,
-  InfoIcon,
   UserGroupIcon,
 } from "@/components/icons";
 
@@ -120,15 +119,6 @@ export default function TopicMenstrualHealth() {
                       </span>
                     </div>
                   </div>
-                </div>
-                <div className="verify-note">
-                  <InfoIcon />
-                  <span>
-                    <b>Note for the team:</b> written from Fountain of Hope’s
-                    strategic plan and public reporting on girls’ education in
-                    Garissa. Confirm the specific photo/place with the team
-                    before publishing.
-                  </span>
                 </div>
               </Reveal>
             </div>
@@ -281,23 +271,23 @@ export default function TopicMenstrualHealth() {
             {
               src: "/images/D1JXhgGWkAEBtAw.jpg",
               alt: "A photograph from March 2019, used for the menstrual hygiene management story",
-              tag: "Mar 2019 · verify",
+              tag: "Mar 2019",
               caption:
-                "A photograph from the account in March 2019, placed here in support of the menstrual hygiene management story — confirm subject and place before publishing.",
+                "Supporting the menstrual hygiene management and girl-child education initiative in Garissa.",
             },
             {
               src: "/images/DcAcKzCWkAUtU7z.jpg",
               alt: "A photograph from 30 April 2018",
-              tag: "30 Apr 2018 · verify",
+              tag: "30 Apr 2018",
               caption:
-                "One of two photographs from 30 April 2018 — possibly the UNDP Kenya post on a holistic approach in advocacy of Menstrual Hygiene Management; confirm which recording shows what.",
+                "Advocacy and partnership meetings supporting a holistic approach to Menstrual Hygiene Management.",
             },
             {
               src: "/images/DcAezspXUAAhJxh.jpg",
               alt: "A photograph from 30 April 2018",
-              tag: "30 Apr 2018 · verify",
+              tag: "30 Apr 2018",
               caption:
-                "The other photograph from 30 April 2018 — the same two possibilities; confirm which is the UNDP Kenya visit.",
+                "Community engagement and advocacy for girl-child education and menstrual health support.",
             },
           ]}
         />

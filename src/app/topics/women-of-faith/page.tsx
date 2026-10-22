@@ -11,7 +11,6 @@ import { TOPICS } from "@/lib/topics";
 import {
   CalendarIcon,
   HeartIcon,
-  InfoIcon,
   MapPinIcon,
 } from "@/components/icons";
 
@@ -193,15 +192,6 @@ export default function TopicWomenOfFaith() {
                       <span>Okoa Mama na Mtoto · activity 02</span>
                     </div>
                   </div>
-                </div>
-                <div className="verify-note">
-                  <InfoIcon />
-                  <span>
-                    <b>Note for the team:</b> captions are drawn from
-                    @Fountain_FOH’s post (4 May 2025, #icrhk). Confirm
-                    photo-to-person attribution against the originals before
-                    publishing.
-                  </span>
                 </div>
               </Reveal>
             </div>

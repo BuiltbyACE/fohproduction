@@ -7,7 +7,7 @@ import TopicHero from "@/components/topic-hero";
 import RelatedTopics from "@/components/related-topics";
 import TopicCta from "@/components/topic-cta";
 import { TOPICS } from "@/lib/topics";
-import { AwardIcon, InfoIcon, MapPinIcon } from "@/components/icons";
+import { AwardIcon, MapPinIcon } from "@/components/icons";
 
 export const metadata = makeMetadata({
   path: "/topics/womens-award",
@@ -115,14 +115,6 @@ export default function TopicWomensAward() {
                       </span>
                     </div>
                   </div>
-                </div>
-                <div className="verify-note">
-                  <InfoIcon />
-                  <span>
-                    <b>Note for the team:</b> tone kept general; confirm the
-                    exact award name, date and occasion with the team before
-                    publishing.
-                  </span>
                 </div>
               </Reveal>
             </div>

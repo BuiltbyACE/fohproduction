@@ -72,6 +72,14 @@ export function MenuIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function CloseIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <Svg strokeWidth={2.2} {...props}>
+      <path d="M18 6 6 18M6 6l12 12" />
+    </Svg>
+  );
+}
+
 export function MapPinIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <Svg {...props}>

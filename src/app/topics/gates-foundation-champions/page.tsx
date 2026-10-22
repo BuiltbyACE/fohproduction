@@ -10,7 +10,6 @@ import TopicCta from "@/components/topic-cta";
 import { TOPICS } from "@/lib/topics";
 import {
   CalendarIcon,
-  InfoIcon,
   MapPinIcon,
   UserGroupIcon,
 } from "@/components/icons";
@@ -200,15 +199,6 @@ export default function TopicGatesFoundationChampions() {
                       </span>
                     </div>
                   </div>
-                </div>
-                <div className="verify-note">
-                  <InfoIcon />
-                  <span>
-                    <b>Note for the team:</b> captions are drawn from
-                    @Fountain_FOH’s post (9 May 2024). The four counties
-                    represented are not named in the post — confirm them before
-                    publishing.
-                  </span>
                 </div>
               </Reveal>
             </div>

@@ -12,7 +12,6 @@ import { TOPICS } from "@/lib/topics";
 import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 import {
   CalendarIcon,
-  InfoIcon,
   MapPinIcon,
   UserGroupIcon,
 } from "@/components/icons";
@@ -170,15 +169,6 @@ export default function TopicGbvMouSigning() {
                       </span>
                     </div>
                   </div>
-                </div>
-                <div className="verify-note">
-                  <InfoIcon />
-                  <span>
-                    <b>Note for the team:</b> the caption draws on
-                    @Fountain_FOH’s post (26 Nov 2018). The exact original post
-                    URL was not retrievable during this session — confirm the
-                    link before publishing.
-                  </span>
                 </div>
               </Reveal>
             </div>

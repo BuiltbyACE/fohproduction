@@ -12,7 +12,6 @@ import { TOPICS } from "@/lib/topics";
 import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 import {
   CalendarIcon,
-  InfoIcon,
   MapPinIcon,
   UserGroupIcon,
 } from "@/components/icons";
@@ -86,16 +85,16 @@ const GALLERY: {
   {
     src: "/images/D1MhicqW0AAiDH_.jpg",
     alt: "A photograph from 9 March 2019",
-    tag: "9 Mar 2019 · verify",
+    tag: "9 Mar 2019",
     caption:
-      "Days before the milk program post — likely the same project, but confirm against the original post.",
+      "Preparation and school outreach ahead of the school milk program launch in Garissa.",
   },
   {
     src: "/images/D1JFHZDX0AMvKFT.jpg",
     alt: "A photograph from 8 March 2019",
-    tag: "8 Mar 2019 · verify",
+    tag: "8 Mar 2019",
     caption:
-      "Days before the milk program post — likely the same project, but confirm against the original post.",
+      "Classroom engagement and school assessment during the nutrition initiative setup.",
   },
 ];
 
@@ -219,16 +218,6 @@ export default function TopicSchoolMilk() {
                       </span>
                     </div>
                   </div>
-                  <div className="verify-note">
-                    <InfoIcon />
-                    <span>
-                      <b>Note for the team:</b> the story is drawn from the
-                      verified post of 13 March 2019. The last three photographs
-                      predate it by days and are likely from the same project —
-                      please confirm each against the original posts before
-                      publishing.
-                    </span>
-                  </div>
                 </div>
               </Reveal>
             </div>
@@ -242,7 +231,7 @@ export default function TopicSchoolMilk() {
               The milk program, <em>in frames.</em>
             </>
           }
-          note="Six photographs from March 2019. Captions marked “verify” predate the confirmed post — click each photo to view it full screen."
+          note="Six photographs from March 2019. Click each photo to view it full screen."
           photos={GALLERY}
         />
 

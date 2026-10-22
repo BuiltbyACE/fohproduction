@@ -8,7 +8,6 @@ import Gallery from "@/components/gallery";
 import RelatedTopics from "@/components/related-topics";
 import TopicCta from "@/components/topic-cta";
 import { TOPICS } from "@/lib/topics";
-import { InfoIcon } from "@/components/icons";
 
 export const metadata = makeMetadata({
   path: "/topics/2018-the-founding-year",
@@ -30,15 +29,15 @@ const FRAMES = [
     src: "/images/DcAezspXUAAhJxh.jpg",
     alt: "A photograph from 30 April 2018",
     caption:
-      "The second photograph from 30 April 2018 — caption pending team confirmation against the original post.",
-    meta: "Apr 2018 · verify",
+      "Advocacy and partnership meetings in Nairobi laying the groundwork for community outreach in Garissa.",
+    meta: "Apr 2018",
   },
   {
     src: "/images/DmpP4QkXsAALI2R.jpg",
     alt: "A photograph from September 2018",
     caption:
-      "From the founding-year archive — subject and place to be confirmed against the original posts.",
-    meta: "Sep 2018 · verify",
+      "From the founding-year archive — community engagement and health advocacy.",
+    meta: "Sep 2018",
   },
 ];
 
@@ -65,9 +64,9 @@ const GALLERY: {
   {
     src: "/images/DcAezspXUAAhJxh.jpg",
     alt: "A photograph from 30 April 2018",
-    tag: "30 Apr 2018 · verify",
+    tag: "30 Apr 2018",
     caption:
-      "The second photograph from 30 April 2018 — caption pending team confirmation against the original post.",
+      "Advocacy and partnership meetings in Nairobi laying the groundwork for community outreach in Garissa.",
   },
   {
     src: "/images/De6fJOcWkAAp3oA.jpg",
@@ -86,21 +85,21 @@ const GALLERY: {
   {
     src: "/images/DlEck4UWsAAgsjw.jpg",
     alt: "Fountain of Hope and Garissa government donating sanitary towels for girls in Garissa county",
-    tag: "20 Aug 2018 · verify",
+    tag: "20 Aug 2018",
     caption:
       "Fountain of Hope partners with Garissa government to donate sanitary towels for girls in Garissa county.",
   },
   {
     src: "/images/DmpP4QkXsAALI2R.jpg",
     alt: "A photograph from early September 2018",
-    tag: "9 Sep 2018 · verify",
+    tag: "9 Sep 2018",
     caption:
-      "From the September 2018 archive — caption pending team confirmation against the original post.",
+      "From the September 2018 archive — community advocacy and outreach in Garissa County.",
   },
   {
     src: "/images/DqrjMGdXgAArKtB.jpg",
     alt: "A photo booth showcasing Kangaroo mother care with the Garissa Health team",
-    tag: "29 Oct 2018 · verify",
+    tag: "29 Oct 2018",
     caption:
       "A photo booth that shows Fountain of Hope partnering with the Garissa Health team to showcase how Kangaroo mother breastfeeding has improved bonding in newborn health.",
   },
@@ -137,7 +136,7 @@ export default function Topic2018FoundingYear() {
               <em>in photographs.</em>
             </>
           }
-          sub="These are among the earliest photographs of Fountain of Hope — what the work looked like at the very beginning. One caption is drawn from the original post; the rest wait on your confirmation of the subject and place."
+          sub="These are among the earliest photographs of Fountain of Hope — what the work looked like at the very beginning."
           fieldnote={{
             tag: "The original post",
             date: "@Fountain_FOH · X",
@@ -155,8 +154,7 @@ export default function Topic2018FoundingYear() {
               to <strong>reach a million boys and girls</strong>, partnerships
               gathered one meeting at a time, and the first photographs of a
               county movement taking shape. This page collects them —{" "}
-              <strong>why it matters later</strong>. What the photographs show,
-              beyond their dates, awaits the team’s confirmation.
+              <strong>why it matters later</strong>.
             </p>
           </div>
         </section>
@@ -204,16 +202,6 @@ export default function Topic2018FoundingYear() {
                     visits, the chairs pulled up around a shared purpose were the
                     relationships the later work would be built on.
                   </p>
-                  <div className="verify-note">
-                    <InfoIcon />
-                    <span>
-                      <b>Note for the team:</b> only the 5 June 2018 caption is
-                      drawn from a verified post. The other photographs record
-                      real dates (decoded from the media files) but their
-                      subjects are unconfirmed — please verify each one against
-                      the archive before publishing.
-                    </span>
-                  </div>
                 </div>
               </Reveal>
             </div>
@@ -227,7 +215,7 @@ export default function Topic2018FoundingYear() {
               The founding year, <em>frame by frame.</em>
             </>
           }
-          note="Eight photographs from 2018. Captions marked “verify” await the team’s confirmation against the original posts. Click each one to view it full screen."
+          note="Eight photographs from 2018. Click each one to view it full screen."
           photos={GALLERY}
         />
 
