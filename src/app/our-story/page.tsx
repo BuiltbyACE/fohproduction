@@ -17,10 +17,9 @@ import StoryCta from "@/components/story-cta";
 
 export const metadata = makeMetadata({
   path: "/our-story",
-  title:
-    "Our story — Fountain of Hope, Garissa County, Kenya",
+  title: "Our Story | Fountain of Hope, Garissa County, Kenya",
   description:
-    "Founded by a daughter of Garissa, for the women of Northern Eastern. The story of Fountain of Hope — from 2017 to the future we are building together.",
+    "Founded in 2017 by Fardosa Osman, Fountain of Hope is a woman-led organization in Garissa County, Kenya advancing maternal health, education, and community resilience for women and girls.",
 });
 
 export default function OurStoryPage() {

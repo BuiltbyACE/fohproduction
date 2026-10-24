@@ -46,9 +46,9 @@ const PARTNERS = [
 export const metadata = makeMetadata({
   path: "/",
   type: "website",
-  title: "Fountain of Hope — Garissa County, Kenya",
+  title: "Fountain of Hope | Garissa County, Kenya — Maternal Health & Women's Empowerment",
   description:
-    "One story, told topic by topic. Fountain of Hope is a woman-led community organization working beside the people of Garissa County in health and education.",
+    "Fountain of Hope is a woman-led community organization in Garissa County, Kenya working to reduce maternal mortality, promote menstrual health, keep girls in school, and build community resilience.",
 });
 
 export default function Home() {

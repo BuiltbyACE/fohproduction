@@ -1,16 +1,46 @@
 import type { Metadata } from "next";
 
-// Single source of truth for the site's origin. Replace with the real
-// production URL before launch — canonical, Open Graph, sitemap and robots
-// all build from this.
-export const SITE_URL = "http://localhost:3111";
+// Single source of truth for the site's origin. Set NEXT_PUBLIC_SITE_URL
+// in production (e.g. https://fountainofhope.org) — canonical, Open Graph,
+// sitemap and robots all build from this.
+function getSiteUrl() {
+  const envUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    process.env.SITE_URL ||
+    process.env.NEXT_PUBLIC_SITE_ORIGIN ||
+    process.env.VERCEL_URL ||
+    process.env.NEXT_PUBLIC_VERCEL_URL;
+
+  if (envUrl && typeof envUrl === "string" && envUrl.trim()) {
+    const url = envUrl.trim().startsWith("http") ? envUrl.trim() : `https://${envUrl.trim()}`;
+    return url.replace(/\/$/, "");
+  }
+
+  // Fallback for local/dev environments when env not set
+  if (process.env.NODE_ENV === "development") {
+    return "http://localhost:3000";
+  }
+  // Do not guess in production - return empty to avoid publishing incorrect canonicals.
+  // Build will still work if env is set at build time; otherwise use relative in metadataBase only where possible.
+  return "";
+}
+
+export const SITE_URL = getSiteUrl();
 
 export const SITE_NAME = "Fountain of Hope — Garissa County, Kenya";
 
 export const SITE_BLURB =
-  "One story, told topic by topic. Fountain of Hope is a woman-led community organization working beside the people of Garissa County in health and education.";
+  "Fountain of Hope is a woman-led community organization in Garissa County, Kenya working beside communities in maternal health, menstrual hygiene, education, and community resilience.";
 
-const abs = (path: string) => `${SITE_URL}${path}`;
+const abs = (path: string) => {
+  if (!SITE_URL) {
+    // If no origin is configured, return path as-is for relative URLs
+    // but this should be avoided in production.
+    return path.startsWith("/") ? path : `/${path}`;
+  }
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  return `${SITE_URL}${cleanPath}`;
+};
 
 export const logoUrl = abs("/fohlogo.png");
 
