@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
 
-// Single source of truth for the site's origin. Set NEXT_PUBLIC_SITE_URL
-// in production (e.g. https://fountainofhope.or.ke) — canonical, Open Graph,
-// sitemap and robots all build from this.
+// Single source of truth for the site's public production origin. Canonical
+// URLs, JSON-LD, sitemap and robots always use this origin — never a preview,
+// staging or mirror deployment URL.
 export const CANONICAL_ORIGIN = "https://fountainofhope.or.ke";
 
 function getSiteUrl() {
   const envUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
-    process.env.SITE_URL ||
-    process.env.NEXT_PUBLIC_SITE_ORIGIN ||
-    process.env.VERCEL_URL ||
-    process.env.NEXT_PUBLIC_VERCEL_URL;
+    process.env.SITE_URL;
 
   if (envUrl && typeof envUrl === "string" && envUrl.trim()) {
     const url = envUrl.trim().startsWith("http") ? envUrl.trim() : `https://${envUrl.trim()}`;
@@ -30,22 +27,22 @@ function getSiteUrl() {
 
 export const SITE_URL = getSiteUrl();
 
+const cleanPath = (path: string) => (path.startsWith("/") ? path : `/${path}`);
+
+/**
+ * Absolute URL on the official production domain. Use this for anything that
+ * tells search engines which page is authoritative (canonical, og:url, logos,
+ * sitemap, robots, JSON-LD), so staging subdomains can never compete.
+ */
+export const canonicalUrl = (path: string) =>
+  `${CANONICAL_ORIGIN}${cleanPath(path)}`;
+
+export const logoUrl = canonicalUrl("/fohlogo.png");
+
 export const SITE_NAME = "Fountain of Hope — Garissa County, Kenya";
 
 export const SITE_BLURB =
   "Fountain of Hope is a woman-led community organization in Garissa County, Kenya working beside communities in maternal health, menstrual hygiene, education, and community resilience.";
-
-const abs = (path: string) => {
-  if (!SITE_URL) {
-    // If no origin is configured, return path as-is for relative URLs
-    // but this should be avoided in production.
-    return path.startsWith("/") ? path : `/${path}`;
-  }
-  const cleanPath = path.startsWith("/") ? path : `/${path}`;
-  return `${SITE_URL}${cleanPath}`;
-};
-
-export const logoUrl = abs("/fohlogo.png");
 
 type PageMeta = {
   path: string;
@@ -62,8 +59,8 @@ export function makeMetadata({
   image = "/images/GqpdGYJXcAAivls.jpg",
   type = "article",
 }: PageMeta): Metadata {
-  const canonical = abs(path);
-  const ogImage = abs(image);
+  const canonical = canonicalUrl(path);
+  const ogImage = canonicalUrl(image);
   return {
     title,
     description,

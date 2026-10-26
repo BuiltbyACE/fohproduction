@@ -1,4 +1,4 @@
-import { CANONICAL_ORIGIN, SITE_URL } from "./seo";
+import { CANONICAL_ORIGIN } from "./seo";
 
 /**
  * Canonical organization facts.
@@ -13,7 +13,7 @@ export const ORG_ALTERNATE_NAMES = [
   "Fountain of Hope Garissa",
   "Fountain of Hope Organisation",
 ];
-export const ORG_URL = SITE_URL || CANONICAL_ORIGIN;
+export const ORG_URL = CANONICAL_ORIGIN;
 export const ORG_EMAIL = "cflgarissa007@gmail.com";
 export const ORG_PHONE_DISPLAY = "+254 742 789 903";
 export const ORG_PHONE_TEL = "+254742789903";

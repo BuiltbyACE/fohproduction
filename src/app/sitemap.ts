@@ -1,15 +1,12 @@
 import type { MetadataRoute } from "next";
 import { TOPICS } from "@/lib/topics";
-import { SITE_URL } from "@/lib/seo";
+import { CANONICAL_ORIGIN } from "@/lib/seo";
 
+// The sitemap always advertises the official production domain, even when this
+// build runs on a preview or staging URL.
 const toUrl = (path: string) => {
   const cleanPath = path.startsWith("/") ? path : `/${path}`;
-  if (!SITE_URL) {
-    // Relative URLs are not ideal for sitemaps, but avoid build failure.
-    // Set NEXT_PUBLIC_SITE_URL in production.
-    return cleanPath;
-  }
-  return `${SITE_URL}${cleanPath}`;
+  return `${CANONICAL_ORIGIN}${cleanPath}`;
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {

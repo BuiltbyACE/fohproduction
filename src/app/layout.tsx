@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import {
-  SITE_URL,
+  CANONICAL_ORIGIN,
   SITE_NAME,
   SITE_BLURB,
   logoUrl,
@@ -22,7 +22,7 @@ const jakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  ...(SITE_URL ? { metadataBase: new URL(SITE_URL) } : {}),
+  metadataBase: new URL(CANONICAL_ORIGIN),
   title: {
     default: SITE_NAME,
     template: "%s | Fountain of Hope",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: SITE_NAME,
     locale: "en_KE",
-    ...(SITE_URL ? { url: SITE_URL } : {}),
+    url: CANONICAL_ORIGIN,
     title: SITE_NAME,
     description: SITE_BLURB,
     images: [{ url: logoUrl }],

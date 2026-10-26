@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/seo";
+import { CANONICAL_ORIGIN } from "@/lib/seo";
 
 // Explicitly welcoming the major search and AI crawlers makes the site's
 // indexability intent unambiguous. Keep /_next/ crawlable: search engines
@@ -29,16 +29,11 @@ export default function robots(): MetadataRoute.Robots {
     ...AI_CRAWLERS.map((userAgent) => ({ userAgent, ...crawlRule })),
   ];
 
-  const sitemap = SITE_URL ? `${SITE_URL}/sitemap.xml` : "/sitemap.xml";
+  const sitemap = `${CANONICAL_ORIGIN}/sitemap.xml`;
 
-  return SITE_URL
-    ? {
-        rules,
-        sitemap,
-        host: SITE_URL,
-      }
-    : {
-        rules,
-        sitemap,
-      };
+  return {
+    rules,
+    sitemap,
+    host: CANONICAL_ORIGIN,
+  };
 }

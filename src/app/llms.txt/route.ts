@@ -1,5 +1,5 @@
 import { TOPICS } from "@/lib/topics";
-import { SITE_BLURB, SITE_URL } from "@/lib/seo";
+import { SITE_BLURB } from "@/lib/seo";
 import {
   ORG_EMAIL,
   ORG_FOCUS_AREAS,
@@ -19,7 +19,7 @@ export const dynamic = "force-static";
  * Spec: https://llmstxt.org/
  */
 export function GET() {
-  const base = SITE_URL || ORG_URL;
+  const base = ORG_URL;
   const absolute = (path: string) => `${base}${path}`;
 
   const lines = [
