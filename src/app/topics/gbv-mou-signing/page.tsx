@@ -68,6 +68,7 @@ export default function TopicGbvMouSigning() {
           kickerSub="Garissa · 26 Nov 2018"
           title={
             <>
+              Gender-based violence support in Garissa, Kenya:{" "}
               A signature against gender-based <em>violence.</em>
             </>
           }

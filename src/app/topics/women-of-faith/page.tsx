@@ -105,6 +105,7 @@ export default function TopicWomenOfFaith() {
           kickerSub="4 May 2025"
           title={
             <>
+              Maternal health advocacy in Garissa, Kenya:{" "}
               Women of faith on <em>the frontline.</em>
             </>
           }

@@ -20,8 +20,10 @@ export default function OurStoryHero() {
       <div className="wrap os-hero-inner">
         <span className="eyebrow eyebrow--light">Our story</span>
         <h1>
-          Founded by a daughter of Garissa,{" "}
-          <em>for the women of Northern Eastern.</em>
+          Fountain of Hope:{" "}
+          <em>
+            A woman-led NGO for pastoralist women and girls in Garissa, Kenya.
+          </em>
         </h1>
         <p className="os-hero-sub">
           Fountain of Hope began in 2017 with a vision to give women in

@@ -102,6 +102,7 @@ export default function TopicGatesFoundationChampions() {
           kickerSub="Nairobi · 9 May 2024"
           title={
             <>
+              Grassroots health champions in Kenya:{" "}
               Four counties, one table — <em>grassroots champions heard.</em>
             </>
           }

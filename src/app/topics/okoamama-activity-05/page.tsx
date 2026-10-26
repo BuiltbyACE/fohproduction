@@ -82,6 +82,7 @@ export default function TopicOkoaMama() {
           kickerSub="19 August 2025"
           title={
             <>
+              Maternal health budgeting in Garissa, Kenya:{" "}
               When a budget meeting is <em>a life-saving meeting.</em>
             </>
           }

@@ -43,6 +43,7 @@ export default function TopicMenstrualHealth() {
           kickerSub="Garissa County"
           title={
             <>
+              Menstrual health and girls&apos; education in Garissa, Kenya:{" "}
               No girl should miss school because{" "}
               <em>she cannot afford a pad.</em>
             </>

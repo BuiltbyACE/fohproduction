@@ -113,6 +113,7 @@ export default function TopicFreeFistulaCamp() {
           kickerSub="May 2019"
           title={
             <>
+              Obstetric fistula care in Garissa, Kenya:{" "}
               A week-long camp, <em>and the hope it restored.</em>
             </>
           }

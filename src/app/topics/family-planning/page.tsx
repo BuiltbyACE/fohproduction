@@ -327,7 +327,8 @@ export default function TopicFamilyPlanning() {
           kickerSub="Garissa County"
           title={
             <>
-              A family-planning <em>advocacy journey.</em>
+              Family planning advocacy in Garissa, Kenya:{" "}
+              <em>the child-spacing journey.</em>
             </>
           }
           sub="How a county with a 5.5% modern contraceptive prevalence rate used culturally and religiously sensitive advocacy — engaging men, religious leaders and county government — to report 11% in child-spacing service uptake by 2022."
@@ -640,7 +641,7 @@ export default function TopicFamilyPlanning() {
               {JOURNEY.map((item) => (
                 <Reveal className="fp-tl-item" key={item.title}>
                   <div className="fp-tl-year">{item.year}</div>
-                  <h5>{item.title}</h5>
+                  <h3>{item.title}</h3>
                   <p>{item.text}</p>
                 </Reveal>
               ))}
@@ -671,7 +672,7 @@ export default function TopicFamilyPlanning() {
               {GOALS.map((g) => (
                 <Reveal className="fp-goal" key={g.n}>
                   <span className="n">{g.n}</span>
-                  <h4>{g.title}</h4>
+                  <h3>{g.title}</h3>
                   <p>{g.text}</p>
                 </Reveal>
               ))}

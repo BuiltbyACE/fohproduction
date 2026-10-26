@@ -123,6 +123,7 @@ export default function TopicMaternityWardsDonation() {
           kickerSub="Garissa · 20 Apr 2018"
           title={
             <>
+              Maternal health in Garissa, Kenya:{" "}
               For mothers and children, <em>a warmer ward.</em>
             </>
           }

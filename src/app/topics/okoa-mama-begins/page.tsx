@@ -122,7 +122,8 @@ export default function TopicOkoaMamaBegins() {
           kickerSub="25–27 February 2025"
           title={
             <>
-              Where Okoa Mama na Mtoto <em>first came together.</em>
+              Maternal health advocacy in Garissa, Kenya:{" "}
+              <em>where Okoa Mama na Mtoto first came together.</em>
             </>
           }
           sub="Before the budgets and the boardrooms, there was a workshop: ICRHk, BMG and women grassroots setting out to implement Okoa Mama na Mtoto (OMMI) — to reduce maternal mortality, child death and morbidity, in service of SDG 2030."

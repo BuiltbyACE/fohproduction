@@ -46,9 +46,10 @@ const PARTNERS = [
 export const metadata = makeMetadata({
   path: "/",
   type: "website",
-  title: "Fountain of Hope | Garissa County, Kenya — Maternal Health & Women's Empowerment",
+  title:
+    "Fountain of Hope | NGO in Garissa, Kenya — Maternal Health, Girls' Education & Family Planning",
   description:
-    "Fountain of Hope is a woman-led community organization in Garissa County, Kenya working to reduce maternal mortality, promote menstrual health, keep girls in school, and build community resilience.",
+    "Fountain of Hope is a woman-led NGO in Garissa County, Kenya working with pastoralist communities to reduce maternal mortality, prevent gender-based violence, promote menstrual health and girls' education, and advance family planning advocacy.",
 });
 
 export default function Home() {
@@ -74,7 +75,8 @@ export default function Home() {
               <span>One story, told topic by topic</span>
             </div>
             <h1>
-              No mother <em>should die while giving birth.</em>
+              Fountain of Hope: Maternal health in Garissa, Kenya —{" "}
+              <em>no mother should die while giving birth.</em>
             </h1>
             <p className="hero-sub">
               Fountain of Hope is a woman-led community organization working
@@ -120,7 +122,7 @@ export default function Home() {
             <Reveal className="topic-head">
               <span className="eyebrow eyebrow--light">The topics</span>
               <h2 className="h2">
-                Real stories
+                Real stories of health, education and resilience in Garissa
               </h2>
               <p>
                 Born from our work and our field notes. Click a topic to read
@@ -139,8 +141,8 @@ export default function Home() {
             <Reveal className="about-txt">
               <span className="eyebrow eyebrow--paper">Our story</span>
               <h2>
-                Founded by a daughter of Garissa,{" "}
-                <em>for the women of Northern Eastern.</em>
+                Fountain of Hope: founded by a daughter of Garissa,{" "}
+                <em>for its women and girls.</em>
               </h2>
               <p className="lede">
                 Fardosa Osman founded Fountain of Hope in{" "}
@@ -215,7 +217,7 @@ export default function Home() {
             <Reveal className="founder-txt">
               <span className="eyebrow eyebrow--paper">Our founder</span>
               <h2>
-                Every story on this page <em>starts with her.</em>
+                Fardosa Osman: <em>the founder behind every story.</em>
               </h2>
               <p className="lede">
                 Fardosa Osman founded Fountain of Hope in{" "}
@@ -236,15 +238,15 @@ export default function Home() {
               </p>
               <div className="founder-feats">
                 <div className="found-feat">
-                  <h4>2017</h4>
+                  <h3>2017</h3>
                   <p>Founded by a daughter of Garissa</p>
                 </div>
                 <div className="found-feat">
-                  <h4>Woman-led</h4>
+                  <h3>Woman-led</h3>
                   <p>A movement carried by women, for women</p>
                 </div>
                 <div className="found-feat">
-                  <h4>Three pillars</h4>
+                  <h3>Three pillars</h3>
                   <p>Health · education · resilience</p>
                 </div>
               </div>
@@ -299,7 +301,7 @@ export default function Home() {
             <Reveal className="partners-head">
               <span className="eyebrow eyebrow--center">Trusted collaborators</span>
               <h2>
-                Our valued <em>partners</em>
+                Our partners in <em>Garissa and Kenya.</em>
               </h2>
               <p className="partners-lede">
                 We work hand-in-hand with government, health institutions and

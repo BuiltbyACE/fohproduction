@@ -132,6 +132,7 @@ export default function Topic2018FoundingYear() {
           kickerSub="2018"
           title={
             <>
+              Garissa, Kenya, 2018:{" "}
               The year Fountain of Hope began —{" "}
               <em>in photographs.</em>
             </>

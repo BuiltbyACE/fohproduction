@@ -10,7 +10,7 @@ function RelCard({ topic }: { topic: Topic }) {
   return (
     <Link ref={ref} className="rel rv" href={topic.href}>
       <div className="rel-num">→ {topic.tag}</div>
-      <h4>{topic.title}</h4>
+      <h3>{topic.title}</h3>
       <p>{topic.description}</p>
       <span className="lnk">
         Read the story
@@ -37,9 +37,9 @@ function HomeCard() {
       <div className="rel-num" style={{ color: "#FF9CBE" }}>
         All topics
       </div>
-      <h4 style={{ color: "#fff" }}>
+      <h3 style={{ color: "#fff" }}>
         Back to the Fountain of Hope story
-      </h4>
+      </h3>
       <p style={{ color: "rgba(255,255,255,.7)" }}>
         Explore the full one-page story and every topic.
       </p>

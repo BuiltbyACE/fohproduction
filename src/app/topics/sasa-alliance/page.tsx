@@ -124,7 +124,8 @@ export default function TopicSasaAlliance() {
           kickerSub="17–18 June 2025"
           title={
             <>
-              SASA: a national commitment <em>to save mothers.</em>
+              SASA Alliance for maternal health in Kenya:{" "}
+              a national commitment <em>to save mothers.</em>
             </>
           }
           sub="In June 2025, Fountain of Hope joined grassroots women champions and partners at the launch of the SASA Alliance in Nairobi — a strategic step to address the maternal health crisis and reduce the high maternal mortalities."

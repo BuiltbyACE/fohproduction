@@ -44,6 +44,7 @@ export default function TopicWomensAward() {
           kickerSub="Garissa County"
           title={
             <>
+              Family planning advocacy in Kenya:{" "}
               An award that belongs to <em>the movement.</em>
             </>
           }

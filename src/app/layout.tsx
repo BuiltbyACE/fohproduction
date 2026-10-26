@@ -6,6 +6,8 @@ import {
   SITE_BLURB,
   logoUrl,
 } from "@/lib/seo";
+import { ORG_KEYWORDS } from "@/lib/organization";
+import { SITE_SCHEMA } from "@/lib/schema";
 import { SupportModalProvider } from "@/components/support-modal";
 import "./globals.css";
 
@@ -26,22 +28,8 @@ export const metadata: Metadata = {
     template: "%s | Fountain of Hope",
   },
   description: SITE_BLURB,
-  keywords: [
-    "Fountain of Hope",
-    "Garissa",
-    "Garissa County",
-    "Kenya",
-    "maternal health",
-    "menstrual health",
-    "women's health",
-    "Okoa Mama na Mtoto",
-    "community organization",
-    "Sanitary towels",
-    "health champions",
-    "gender-based violence",
-    "girls education",
-    "community resilience",
-  ],
+  keywords: ORG_KEYWORDS,
+  category: "nonprofit",
   authors: [{ name: "Fountain of Hope" }],
   creator: "Fountain of Hope",
   publisher: "Fountain of Hope",
@@ -77,52 +65,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
-        <div className="grain" aria-hidden="true" />
+        {/*
+          JSON-LD is rendered with a native <script> tag as recommended by the
+          Next.js App Router docs. Crawlers read it wherever it appears in the
+          document; keeping it first in <body> makes it available immediately.
+        */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "Organization",
-                  "@id": SITE_URL ? `${SITE_URL}/#organization` : "/#organization",
-                  name: "Fountain of Hope",
-                  alternateName: "Fountain of Hope Garissa",
-                  url: SITE_URL || undefined,
-                  logo: {
-                    "@type": "ImageObject",
-                    url: logoUrl,
-                  },
-                  sameAs: ["https://x.com/Fountain_FOH"],
-                  foundingDate: "2017",
-                  areaServed: [
-                    { "@type": "City", name: "Garissa" },
-                    { "@type": "AdministrativeArea", name: "Garissa County" },
-                  ],
-                  address: {
-                    "@type": "PostalAddress",
-                    addressLocality: "Garissa",
-                    addressRegion: "Garissa County",
-                    addressCountry: "KE",
-                  },
-                  email: "cflgarissa007@gmail.com",
-                  telephone: "+254 742 789 903",
-                  description: SITE_BLURB,
-                },
-                {
-                  "@type": "WebSite",
-                  "@id": SITE_URL ? `${SITE_URL}/#website` : "/#website",
-                  url: SITE_URL || undefined,
-                  name: SITE_NAME,
-                  description: SITE_BLURB,
-                  publisher: { "@id": SITE_URL ? `${SITE_URL}/#organization` : "/#organization" },
-                  inLanguage: "en-KE",
-                },
-              ],
-            }),
+            __html: JSON.stringify(SITE_SCHEMA).replace(/</g, "\\u003c"),
           }}
         />
+        <div className="grain" aria-hidden="true" />
         <SupportModalProvider>{children}</SupportModalProvider>
       </body>
     </html>

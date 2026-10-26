@@ -40,7 +40,7 @@ export default function StoryCarousel({ frames }: { frames: StoryFrame[] }) {
               loading="lazy"
             />
             <div className="cap">
-              <h4>{frame.caption}</h4>
+              <h3>{frame.caption}</h3>
               <div className="meta">{frame.meta}</div>
             </div>
           </div>

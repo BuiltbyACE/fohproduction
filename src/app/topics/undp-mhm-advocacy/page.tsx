@@ -62,6 +62,7 @@ export default function TopicUndpMhmAdvocacy() {
           kickerSub="Nairobi · 30 Apr 2018"
           title={
             <>
+              Menstrual hygiene management in Kenya:{" "}
               A holistic approach, <em>in advocacy.</em>
             </>
           }

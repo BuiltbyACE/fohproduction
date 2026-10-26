@@ -125,6 +125,7 @@ export default function TopicSchoolMilk() {
           kickerSub="Nanigi · Iftin · 2019"
           title={
             <>
+              School nutrition in Garissa, Kenya:{" "}
               A glass of milk, and <em>a reason to stay in school.</em>
             </>
           }

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 
 // Single source of truth for the site's origin. Set NEXT_PUBLIC_SITE_URL
-// in production (e.g. https://fountainofhope.org) — canonical, Open Graph,
+// in production (e.g. https://fountainofhope.or.ke) — canonical, Open Graph,
 // sitemap and robots all build from this.
+export const CANONICAL_ORIGIN = "https://fountainofhope.or.ke";
+
 function getSiteUrl() {
   const envUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
@@ -20,9 +22,10 @@ function getSiteUrl() {
   if (process.env.NODE_ENV === "development") {
     return "http://localhost:3000";
   }
-  // Do not guess in production - return empty to avoid publishing incorrect canonicals.
-  // Build will still work if env is set at build time; otherwise use relative in metadataBase only where possible.
-  return "";
+  // Production fallback to the verified official origin. This keeps canonical,
+  // sitemap, Open Graph and JSON-LD URLs absolute even if the deployment is
+  // missing NEXT_PUBLIC_SITE_URL at build time.
+  return CANONICAL_ORIGIN;
 }
 
 export const SITE_URL = getSiteUrl();
