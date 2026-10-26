@@ -96,16 +96,12 @@ export const SOCIAL_PROFILES: SocialProfile[] = [
         },
       ]
     : []),
-  ...(youtubeUrl
-    ? [
-        {
-          name: "YouTube",
-          url: youtubeUrl,
-          label: "Fountain of Hope on YouTube",
-          icon: "youtube" as const,
-        },
-      ]
-    : []),
+  {
+    name: "YouTube",
+    url: "https://www.youtube.com/watch?v=goSYFXDqkHc",
+    label: "Fountain of Hope YouTube Video",
+    icon: "youtube" as const,
+  },
 ];
 
 export type PartnerLink = {

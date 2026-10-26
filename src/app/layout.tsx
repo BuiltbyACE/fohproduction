@@ -10,6 +10,7 @@ import { ORG_KEYWORDS } from "@/lib/organization";
 import { SITE_SCHEMA } from "@/lib/schema";
 import { SupportModalProvider } from "@/components/support-modal";
 import "./globals.css";
+import Head from "next/head";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -64,6 +65,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${fraunces.variable} ${jakartaSans.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+    <Head>
+      <link rel="canonical" href={CANONICAL_ORIGIN} />
+    </Head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         {/*
           JSON-LD is rendered with a native <script> tag as recommended by the
