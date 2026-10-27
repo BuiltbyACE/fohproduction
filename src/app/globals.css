@@ -513,6 +513,8 @@ header.scrolled {
 .fieldnote .fn-date { font-size: 11px; font-weight: 600; color: rgba(255, 255, 255, .6); white-space: nowrap }
 .fieldnote p { font-size: .9rem; line-height: 1.6; color: rgba(255, 255, 255, .86); font-family: var(--serif); font-style: italic }
 .fieldnote .fn-src { margin-top: .5rem; font-size: 10.5px; color: rgba(255, 255, 255, .5) }
+.fieldnote .fn-src a { color: rgba(255, 255, 255, .85); text-decoration: underline; text-underline-offset: .2em; transition: color .25s }
+.fieldnote .fn-src a:hover { color: #FF9CBE }
 
 /* carousel chrome */
 .car-out { position: absolute; right: clamp(20px, 5vw, 56px); bottom: 2rem; z-index: 3; display: flex; align-items: center; gap: 1rem }
@@ -697,6 +699,8 @@ footer .brand { color: #fff }
 .fn-card h3 { font-family: var(--serif); font-weight: 400; font-size: 1.7rem; line-height: 1.12; margin-bottom: 1rem; letter-spacing: -.01em }
 .fn-card p { font-size: .92rem; line-height: 1.75; color: rgba(255, 255, 255, .8) }
 .fn-card p + p { margin-top: .9rem }
+.fn-card a { color: #FF9CBE; text-decoration: underline; text-underline-offset: .15em; transition: color .25s }
+.fn-card a:hover { color: #fff }
 .fn-meta { margin-top: 1.5rem; padding-top: 1.3rem; border-top: 1px solid rgba(255, 255, 255, .14); display: grid; gap: .7rem }
 .fn-meta div { display: flex; gap: .7rem; align-items: flex-start; font-size: 12.5px; color: rgba(255, 255, 255, .72) }
 .fn-meta svg { width: 15px; height: 15px; flex: none; margin-top: 2px; color: #FF9CBE }

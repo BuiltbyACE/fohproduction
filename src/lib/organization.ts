@@ -21,6 +21,17 @@ export const ORG_FOUNDING_DATE = "2017";
 export const ORG_FOUNDER = "Fardosa Osman";
 export const ORG_SLOGAN = "No mother should die while giving birth.";
 
+/** Official public organisation profiles. */
+export const ICRHK_URL = "https://www.icrhk.org";
+
+/**
+ * ICRHK coverage of the religious women leaders who stepped up to save
+ * mothers and newborns in Garissa through the Okoa Mama na Mtoto initiative.
+ * Used for contextual backlinks to the original field report.
+ */
+export const ICRHK_STORY_URL =
+  "https://www.icrhk.org/women-religious-leaders-in-garissa-step-up-to-save-mothers-and-newborns/";
+
 export const ORG_DESCRIPTION =
   "Fountain of Hope is a woman-led, community-rooted organization in Garissa County, Kenya. It works with pastoralist communities on maternal and newborn health, girls' education, menstrual health, gender-based violence prevention, family planning advocacy and community resilience.";
 
@@ -107,6 +118,8 @@ export const SOCIAL_PROFILES: SocialProfile[] = [
 export type PartnerLink = {
   name: string;
   url: string;
+  /** Optional deep link to a specific story, publication or report. */
+  storyUrl?: string;
   /** Short relationship description for aria-label and schema. */
   relationship: string;
   kind: "partner" | "network" | "public" | "registry";
@@ -127,7 +140,8 @@ export const PARTNER_LINKS: PartnerLink[] = [
   },
   {
     name: "ICRH Kenya",
-    url: "https://www.icrhk.org",
+    url: ICRHK_URL,
+    storyUrl: ICRHK_STORY_URL,
     relationship: "Okoa Mama na Mtoto implementing partner",
     kind: "partner",
   },
@@ -161,6 +175,20 @@ export const PARTNER_LINKS: PartnerLink[] = [
 export const NETWORK_LINKS: PartnerLink[] = PARTNER_LINKS.filter(
   (partner) => partner.kind === "network",
 );
+
+/**
+ * Curated external stories covered by Fountain of Hope — used for contextual
+ * backlinks, llms.txt coverage notes and related coverage references.
+ */
+export const EXTERNAL_STORY_LINKS: PartnerLink[] = [
+  {
+    name: "Women religious leaders in Garissa step up to save mothers and newborns",
+    url: ICRHK_STORY_URL,
+    relationship:
+      "ICRH coverage of religious women leaders advocating maternal and newborn health in Garissa",
+    kind: "partner",
+  },
+];
 
 export const REGISTRY_LINKS: PartnerLink[] = [
   {

@@ -1,6 +1,7 @@
 import { TOPICS } from "@/lib/topics";
 import { SITE_BLURB } from "@/lib/seo";
 import {
+  EXTERNAL_STORY_LINKS,
   ORG_EMAIL,
   ORG_FOCUS_AREAS,
   ORG_NAME,
@@ -49,6 +50,11 @@ export function GET() {
     "## Partners and networks",
     ...PARTNER_LINKS.map(
       (partner) => `- [${partner.name}](${partner.url}): ${partner.relationship}`
+    ),
+    "",
+    "## External coverage",
+    ...EXTERNAL_STORY_LINKS.map(
+      (story) => `- [${story.name}](${story.url}): ${story.relationship}`
     ),
     "",
     "## Registries and public institutions",

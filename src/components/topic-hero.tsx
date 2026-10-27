@@ -8,7 +8,14 @@ import { ArrowDownIcon, ArrowNextIcon, ArrowPrevIcon } from "./icons";
 
 export type HeroSlide = { src: string; alt: string };
 
-type Fieldnote = { tag: string; date: string; text: string; src: string };
+type Fieldnote = {
+  tag: string;
+  date: string;
+  text: string;
+  src: string;
+  /** Optional outbound source link (e.g. an external coverage article). */
+  href?: string;
+};
 
 type Props = {
   slides: HeroSlide[];
@@ -159,7 +166,19 @@ export default function TopicHero({
               <span className="fn-date">{fieldnote.date}</span>
             </div>
             <p>{fieldnote.text}</p>
-            <div className="fn-src">{fieldnote.src}</div>
+            <div className="fn-src">
+              {fieldnote.href ? (
+                <a
+                  href={fieldnote.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {fieldnote.src} ↗
+                </a>
+              ) : (
+                fieldnote.src
+              )}
+            </div>
           </Reveal>
         )}
       </div>

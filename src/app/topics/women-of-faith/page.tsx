@@ -8,6 +8,7 @@ import Gallery from "@/components/gallery";
 import RelatedTopics from "@/components/related-topics";
 import TopicCta from "@/components/topic-cta";
 import { TOPICS } from "@/lib/topics";
+import { ICRHK_STORY_URL } from "@/lib/organization";
 import {
   CalendarIcon,
   HeartIcon,
@@ -115,6 +116,7 @@ export default function TopicWomenOfFaith() {
             date: "@Fountain_FOH · X",
             text: "“Second activity of the Okoa Mama na Mtoto initiative, this time working with the religious women leaders advocating for maternal and newborn health. #icrhk”",
             src: "4 May 2025 · @Fountain_FOH on X",
+            href: ICRHK_STORY_URL,
           }}
         />
 
@@ -173,6 +175,18 @@ export default function TopicWomenOfFaith() {
                   <p>
                     When a woman of faith speaks of a mother’s survival, families
                     listen — and act.
+                  </p>
+                  <p>
+                    Read the full original on{" "}
+                    <a
+                      href={ICRHK_STORY_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      the International Centre for Reproductive Health Kenya
+                    </a>
+                    &rsquo;s coverage of how religious women leaders stepped up to
+                    save mothers and newborns in Garissa.
                   </p>
                   <div className="fn-meta">
                     <div>
