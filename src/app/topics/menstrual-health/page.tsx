@@ -3,6 +3,7 @@ import Image from "next/image";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import PhotoBand from "@/components/photo-band";
 import Gallery from "@/components/gallery";
@@ -19,7 +20,7 @@ import {
 export const metadata = makeMetadata({
   path: "/topics/menstrual-health",
   title:
-    "Why a girl should never miss school because she cannot afford a pad | Fountain of Hope",
+    "Menstrual Health and Schooling in Garissa",
   description:
     "Menstrual health support and school advocacy keep Garissa's girls learning — dignity kits, education, and the fight to end period absenteeism.",
 });
@@ -28,6 +29,7 @@ export default function TopicMenstrualHealth() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/menstrual-health" />
 
       <main>
         <TopicHero
@@ -97,7 +99,7 @@ export default function TopicMenstrualHealth() {
                   <div className="no">— The story —</div>
                   <h3>What missing school costs a girl.</h3>
                   <p>
-                    Each missed period during a menstruation means missed
+                    Each school day missed during menstruation means missed
                     lessons, missed confidence, and missed chances. In a county
                     where the boy:girl schooling gap is stubborn, periods are
                     too often the reason a girl falls behind or leaves.
@@ -271,21 +273,21 @@ export default function TopicMenstrualHealth() {
             },
             {
               src: "/images/D1JXhgGWkAEBtAw.jpg",
-              alt: "A photograph from March 2019, used for the menstrual hygiene management story",
+              alt: "Sanitary pads presented to schoolgirls in white and green hijabs at a community handover in Garissa",
               tag: "Mar 2019",
               caption:
                 "Supporting the menstrual hygiene management and girl-child education initiative in Garissa.",
             },
             {
               src: "/images/DcAcKzCWkAUtU7z.jpg",
-              alt: "A photograph from 30 April 2018",
+              alt: "Six women standing together in an office beneath a Citizen Television poster",
               tag: "30 Apr 2018",
               caption:
                 "Advocacy and partnership meetings supporting a holistic approach to Menstrual Hygiene Management.",
             },
             {
               src: "/images/DcAezspXUAAhJxh.jpg",
-              alt: "A photograph from 30 April 2018",
+              alt: "A woman and five men outside an office, holding up a Garissa Muslim Youth Organization Free Iftar T-shirt",
               tag: "30 Apr 2018",
               caption:
                 "Community engagement and advocacy for girl-child education and menstrual health support.",

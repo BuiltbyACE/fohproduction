@@ -2,6 +2,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
@@ -17,9 +18,9 @@ import {
 export const metadata = makeMetadata({
   path: "/topics/gates-foundation-champions",
   title:
-    "Grassroots champions at the Gates Foundation office | Fountain of Hope",
+    "Grassroots Health Champions, Gates Kenya",
   description:
-    "Grassroots women health champions from four counties shared their experience and impact with Madam Rachel Toku-Appiah at the newly opened Bill & Melinda Gates Foundation Kenya office, May 2024.",
+    "Grassroots women health champions from four counties share their impact with Rachel Toku-Appiah at the Gates Foundation's Kenya office, May 2024.",
 });
 
 const FRAMES = [
@@ -79,6 +80,7 @@ export default function TopicGatesFoundationChampions() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/gates-foundation-champions" />
 
       <main>
         <TopicHero

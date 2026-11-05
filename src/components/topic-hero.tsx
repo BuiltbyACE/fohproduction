@@ -136,7 +136,7 @@ export default function TopicHero({
         <nav className="crumbs" aria-label="Breadcrumb">
           <Link href="/">Fountain of Hope</Link>
           <span className="sep">/</span>
-          <Link href="/#topics">Topics</Link>
+          <Link href="/topics">Topics</Link>
           <span className="sep">/</span>
           <span className="here">{crumbsHere}</span>
         </nav>

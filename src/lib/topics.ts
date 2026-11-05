@@ -32,7 +32,7 @@ export const TOPICS: Topic[] = [
   },
   {
     tag: "Recognition · Women’s health",
-    title: "Award for Fountain of Hope in advocacy family planning 2030",
+    title: "An award for Fountain of Hope’s Family Planning 2030 advocacy",
     navLabel: "Women’s health award",
     description:
       "A moment of recognition for a movement that belongs to the women who carry it — and the work it represents.",
@@ -82,13 +82,13 @@ export const TOPICS: Topic[] = [
   },
   {
     tag: "Archive · 2018",
-    title: "The year Fountain of Hope began — in photographs",
-    navLabel: "2018 · The founding year",
+    title: "Fountain of Hope’s first year of activity — in photographs",
+    navLabel: "2018 · First year of activity",
     description:
-      "A first photo-archive of the founding year: sanitary towel donations for a menstrual hygiene program, community courtesy calls, and the seeds of the work Garissa’s mothers and girls would build on.",
+      "A first photo-archive of 2018, the first year of activity: sanitary towel donations for a menstrual hygiene program, community courtesy calls, and the seeds of the work Garissa’s mothers and girls would build on.",
     href: "/topics/2018-the-founding-year",
     image: "/images/De6fJOcWkAAp3oA.jpg",
-    alt: "Fountain of Hope's founding year, 2018 — the first photographs of the work",
+    alt: "Fountain of Hope's first year of activity, 2018 — receiving sanitary towel donations at M.E.D.S.",
   },
   {
     tag: "Education · Nutrition",

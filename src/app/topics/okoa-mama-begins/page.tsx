@@ -2,6 +2,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import StoryCarousel from "@/components/story-carousel";
 import PhotoBand from "@/components/photo-band";
@@ -16,9 +17,9 @@ import {
 
 export const metadata = makeMetadata({
   path: "/topics/okoa-mama-begins",
-  title: "How Okoa Mama na Mtoto began | Fountain of Hope",
+  title: "How Okoa Mama na Mtoto Began",
   description:
-    "The workshop that started it — ICRHk, BMG and women grassroots set out to implement Okoa Mama na Mtoto: reducing maternal mortality, child death and morbidity, accelerating SDG 2030. 25–27 February 2025.",
+    "The February 2025 workshop where ICRHk, BMG and grassroots women set out to implement Okoa Mama na Mtoto and reduce maternal and child deaths.",
 });
 
 const FRAMES = [
@@ -99,6 +100,7 @@ export default function TopicOkoaMamaBegins() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/okoa-mama-begins" />
 
       <main>
         <TopicHero

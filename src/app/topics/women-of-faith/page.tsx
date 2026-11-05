@@ -2,6 +2,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
@@ -18,7 +19,7 @@ import {
 export const metadata = makeMetadata({
   path: "/topics/women-of-faith",
   title:
-    "Women of faith on the frontline | Fountain of Hope",
+    "Women of Faith: Maternal Health, Garissa",
   description:
     "The second Okoa Mama na Mtoto activity: religious women leaders advocate maternal and newborn health across Garissa — 4 May 2025.",
 });
@@ -83,6 +84,7 @@ export default function TopicWomenOfFaith() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/women-of-faith" />
 
       <main>
         <TopicHero

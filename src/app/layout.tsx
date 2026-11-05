@@ -10,7 +10,6 @@ import { ORG_KEYWORDS } from "@/lib/organization";
 import { SITE_SCHEMA } from "@/lib/schema";
 import { SupportModalProvider } from "@/components/support-modal";
 import "./globals.css";
-import Head from "next/head";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -35,12 +34,11 @@ export const metadata: Metadata = {
   creator: "Fountain of Hope",
   publisher: "Fountain of Hope",
   icons: {
-    icon: "/fohlogo.png",
-    shortcut: "/fohlogo.png",
-    apple: "/fohlogo.png",
+    icon: "/icon-512.png",
+    shortcut: "/icon-512.png",
+    apple: "/apple-icon.png",
   },
   manifest: "/manifest.webmanifest",
-  robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
@@ -65,10 +63,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${fraunces.variable} ${jakartaSans.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-    <Head>
-      <link rel="canonical" href={CANONICAL_ORIGIN} />
-    </Head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        <noscript>
+          <style>{`.rv { opacity: 1; transform: none }`}</style>
+        </noscript>
         {/*
           JSON-LD is rendered with a native <script> tag as recommended by the
           Next.js App Router docs. Crawlers read it wherever it appears in the

@@ -2,6 +2,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
@@ -19,9 +20,9 @@ import {
 export const metadata = makeMetadata({
   path: "/topics/free-fistula-camp",
   title:
-    "The Free Fistula Camp: healing and hope in Garissa | Fountain of Hope",
+    "Free Obstetric Fistula Camp in Garissa",
   description:
-    "A week-long Free Fistula Camp in Garissa, May 2019 — corrective obstetric fistula surgery and care, and a public stand: no woman should suffer the shame of obstetric fistula.",
+    "A week-long Free Fistula Camp in Garissa, May 2019: corrective obstetric fistula surgery and care, and a stand that no woman should suffer its shame.",
 });
 
 const FRAMES = [
@@ -90,6 +91,7 @@ export default function TopicFreeFistulaCamp() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/free-fistula-camp" />
 
       <main>
         <TopicHero

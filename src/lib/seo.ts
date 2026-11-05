@@ -48,19 +48,23 @@ type PageMeta = {
   path: string;
   title: string;
   description: string;
-  image?: string;
   type?: "website" | "article";
 };
+
+/** 1200×630 share image: /og/<slug>.jpg per topic, otherwise the default. */
+export const ogImagePath = (path: string) =>
+  path.startsWith("/topics/")
+    ? `/og/${path.slice("/topics/".length)}.jpg`
+    : "/og/default.jpg";
 
 export function makeMetadata({
   path,
   title,
   description,
-  image = "/images/GqpdGYJXcAAivls.jpg",
   type = "article",
 }: PageMeta): Metadata {
   const canonical = canonicalUrl(path);
-  const ogImage = canonicalUrl(image);
+  const ogImage = canonicalUrl(ogImagePath(path));
   return {
     title,
     description,
@@ -73,10 +77,11 @@ export function makeMetadata({
       siteName: SITE_NAME,
       locale: "en_KE",
       type,
-      images: [{ url: ogImage, alt: title }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
+      site: "@Fountain_FOH",
       title,
       description,
       images: [ogImage],

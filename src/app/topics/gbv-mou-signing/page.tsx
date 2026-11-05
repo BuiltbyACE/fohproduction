@@ -2,6 +2,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
@@ -19,9 +20,9 @@ import {
 export const metadata = makeMetadata({
   path: "/topics/gbv-mou-signing",
   title:
-    "A signature against gender-based violence in Garissa | Fountain of Hope",
+    "Gender-Based Violence MoU in Garissa",
   description:
-    "At the Garissa Child Protection Unit, Fountain of Hope witnessed the signing of an MoU between the County Government of Garissa and the National Government on Gender-Based Violence. 26 November 2018.",
+    "Fountain of Hope witnessed the gender-based violence MoU signed by the Garissa County and National Governments at the Child Protection Unit, November 2018.",
 });
 
 const FRAMES = [
@@ -53,6 +54,7 @@ export default function TopicGbvMouSigning() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/gbv-mou-signing" />
 
       <main>
         <TopicHero

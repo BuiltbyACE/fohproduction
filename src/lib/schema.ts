@@ -15,7 +15,8 @@ import {
   REGISTRY_LINKS,
   SOCIAL_PROFILES,
 } from "./organization";
-import { logoUrl } from "./seo";
+import { canonicalUrl, logoUrl, ogImagePath } from "./seo";
+import { TOPICS } from "./topics";
 
 const slugify = (value: string) =>
   value
@@ -110,9 +111,11 @@ export const SITE_SCHEMA = {
         // Always lead with the verified X profile, then any additional
         // verified channels (Facebook, opt-in LinkedIn/YouTube).
         ...(xProfile ? [xProfile.url] : []),
-        ...SOCIAL_PROFILES.filter((profile) => profile.icon !== "x").map(
-          (profile) => profile.url,
-        ),
+        // YouTube is a single video, not a channel, so it stays an on-page
+        // link and is not a profile of the organization.
+        ...SOCIAL_PROFILES.filter(
+          (profile) => profile.icon !== "x" && profile.icon !== "youtube",
+        ).map((profile) => profile.url),
       ],
       ...(asalNetwork
         ? {
@@ -189,3 +192,49 @@ export const SITE_SCHEMA = {
     ...partnerNodes,
   ],
 };
+
+/**
+ * Page-level graph for a topic: an Article plus its BreadcrumbList.
+ *
+ * datePublished is deliberately omitted. The dates on these pages are event
+ * dates, not publication dates, and must not be presented as the latter.
+ */
+export function topicSchema(path: string) {
+  const topic = TOPICS.find((item) => item.href === path);
+  if (!topic) return null;
+
+  const url = canonicalUrl(path);
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `${url}#article`,
+        headline: topic.title,
+        description: topic.description,
+        image: canonicalUrl(ogImagePath(path)),
+        url,
+        mainEntityOfPage: url,
+        inLanguage: "en-KE",
+        isPartOf: { "@id": websiteId },
+        author: { "@id": orgId },
+        publisher: { "@id": orgId },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${url}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: ORG_NAME, item: `${ORG_URL}/` },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Topics",
+            item: canonicalUrl("/topics"),
+          },
+          { "@type": "ListItem", position: 3, name: topic.title, item: url },
+        ],
+      },
+    ],
+  };
+}

@@ -2,6 +2,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
@@ -12,9 +13,9 @@ import { TOPICS } from "@/lib/topics";
 export const metadata = makeMetadata({
   path: "/topics/2018-the-founding-year",
   title:
-    "The year Fountain of Hope began, in photographs | Fountain of Hope",
+    "2018: Our First Year of Activity, Garissa",
   description:
-    "A first photo-archive of Fountain of Hope's founding year, 2018 — sanitary towel donations for a menstrual hygiene program, community courtesy calls, and the seeds of the work to come.",
+    "A photo archive of Fountain of Hope's first year of activity, 2018: sanitary towel donations, community courtesy calls and the seeds of the work to come.",
 });
 
 const FRAMES = [
@@ -27,16 +28,16 @@ const FRAMES = [
   },
   {
     src: "/images/DcAezspXUAAhJxh.jpg",
-    alt: "A photograph from 30 April 2018",
+    alt: "A woman and five men outside an office, holding up a Garissa Muslim Youth Organization Free Iftar T-shirt",
     caption:
       "Advocacy and partnership meetings in Nairobi laying the groundwork for community outreach in Garissa.",
     meta: "Apr 2018",
   },
   {
     src: "/images/DmpP4QkXsAALI2R.jpg",
-    alt: "A photograph from September 2018",
+    alt: "A clinician in a white coat attends a woman lying on a table at an outdoor medical camp as children watch",
     caption:
-      "From the founding-year archive — community engagement and health advocacy.",
+      "From the 2018 archive — community engagement and health advocacy.",
     meta: "Sep 2018",
   },
 ];
@@ -57,13 +58,13 @@ const GALLERY: {
   {
     src: "/images/DcAcKzCWkAUtU7z.jpg",
     alt: "First lady county association advocating for menstrual health management",
-    tag: "30 Apr 2018 · verify",
+    tag: "30 Apr 2018",
     caption:
       "First lady county association advocating for menstrual health management, child empowerment program advocacy at UNDP KE.",
   },
   {
     src: "/images/DcAezspXUAAhJxh.jpg",
-    alt: "A photograph from 30 April 2018",
+    alt: "A woman and five men outside an office, holding up a Garissa Muslim Youth Organization Free Iftar T-shirt",
     tag: "30 Apr 2018",
     caption:
       "Advocacy and partnership meetings in Nairobi laying the groundwork for community outreach in Garissa.",
@@ -91,7 +92,7 @@ const GALLERY: {
   },
   {
     src: "/images/DmpP4QkXsAALI2R.jpg",
-    alt: "A photograph from early September 2018",
+    alt: "A clinician in a white coat attends a woman lying on a table at an outdoor medical camp as children watch",
     tag: "9 Sep 2018",
     caption:
       "From the September 2018 archive — community advocacy and outreach in Garissa County.",
@@ -109,6 +110,7 @@ export default function Topic2018FoundingYear() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/2018-the-founding-year" />
 
       <main>
         <TopicHero
@@ -119,21 +121,21 @@ export default function Topic2018FoundingYear() {
             },
             {
               src: "/images/DcAezspXUAAhJxh.jpg",
-              alt: "A photograph from 30 April 2018",
+              alt: "A woman and five men outside an office, holding up a Garissa Muslim Youth Organization Free Iftar T-shirt",
             },
             {
               src: "/images/DmpP4QkXsAALI2R.jpg",
-              alt: "A photograph from September 2018",
+              alt: "A clinician in a white coat attends a woman lying on a table at an outdoor medical camp as children watch",
             },
           ]}
-          ariaLabel="The year Fountain of Hope began, in photographs — 2018"
-          crumbsHere="2018 &middot; The founding year"
-          kickerTop="ARCHIVE · THE FOUNDING YEAR"
+          ariaLabel="Fountain of Hope's first year of activity, in photographs — 2018"
+          crumbsHere="2018 &middot; First year of activity"
+          kickerTop="ARCHIVE · FIRST YEAR OF ACTIVITY"
           kickerSub="2018"
           title={
             <>
               Garissa, Kenya, 2018:{" "}
-              The year Fountain of Hope began —{" "}
+              Fountain of Hope&apos;s first year of activity —{" "}
               <em>in photographs.</em>
             </>
           }
@@ -172,7 +174,7 @@ export default function Topic2018FoundingYear() {
                 </h2>
               </div>
               <p className="fn-intro">
-                A founding year kept in photographs: donation drives, courtesy
+                A first year kept in photographs: donation drives, courtesy
                 calls, and the quiet, everyday work of a county organization
                 finding its feet.
               </p>
@@ -213,7 +215,7 @@ export default function Topic2018FoundingYear() {
           eyebrow="The year in photographs"
           title={
             <>
-              The founding year, <em>frame by frame.</em>
+              The first year, <em>frame by frame.</em>
             </>
           }
           note="Eight photographs from 2018. Click each one to view it full screen."
@@ -222,7 +224,7 @@ export default function Topic2018FoundingYear() {
 
         <RelatedTopics related={[TOPICS[1], TOPICS[6]]} />
 
-        <TopicCta message="The founding year is where every impact story since began — your support keeps the archive, and the work, growing." />
+        <TopicCta message="The first year of activity is where every impact story since began — your support keeps the archive, and the work, growing." />
       </main>
 
       <SiteFooter />

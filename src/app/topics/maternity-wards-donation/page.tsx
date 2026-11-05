@@ -2,6 +2,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
@@ -20,9 +21,9 @@ import {
 export const metadata = makeMetadata({
   path: "/topics/maternity-wards-donation",
   title:
-    "Porridge flour and Mackintosh covers for the wards of Garissa | Fountain of Hope",
+    "Maternity Ward Donation in Garissa, 2018",
   description:
-    "On 20 April 2018, Fountain of Hope and the Garissa community donated Mackintosh bed covers and porridge flour to the Maternity and Pediatric Wards at Garissa Referral Hospital.",
+    "On 20 April 2018, Fountain of Hope and the community donated Mackintosh covers and porridge flour to Garissa Referral Hospital's maternity and paediatric wards.",
 });
 
 const FRAMES = [
@@ -96,6 +97,7 @@ export default function TopicMaternityWardsDonation() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/maternity-wards-donation" />
 
       <main>
         <TopicHero

@@ -2,6 +2,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import StoryCarousel from "@/components/story-carousel";
 import PhotoBand from "@/components/photo-band";
@@ -18,7 +19,7 @@ import {
 export const metadata = makeMetadata({
   path: "/topics/sasa-alliance",
   title:
-    "The SASA Alliance: a national commitment to save mothers | Fountain of Hope",
+    "SASA Alliance: Maternal Health in Kenya",
   description:
     "The SASA Alliance launches in Nairobi to address the maternal health crisis — grassroots women champions, present to show the commitment. 17–18 June 2025.",
 });
@@ -101,6 +102,7 @@ export default function TopicSasaAlliance() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/sasa-alliance" />
 
       <main>
         <TopicHero

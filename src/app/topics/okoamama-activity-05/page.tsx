@@ -2,6 +2,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import StoryCarousel from "@/components/story-carousel";
 import RelatedTopics from "@/components/related-topics";
@@ -15,9 +16,9 @@ import {
 
 export const metadata = makeMetadata({
   path: "/topics/okoamama-activity-05",
-  title: "When a budget meeting is a life-saving meeting | Fountain of Hope",
+  title: "Maternal Health Budgeting in Garissa",
   description:
-    "The fifth activity of Okoa Mama na Mtoto: Garissa's CECM Health, Chief Officer, Director for Health, and Assembly Health and Budget Committee members deliberate maternal and newborn health. 19 August 2025.",
+    "The fifth Okoa Mama na Mtoto activity: Garissa's county health leaders and Assembly budget committee members deliberate maternal and newborn health.",
 });
 
 const FRAMES = [
@@ -55,6 +56,7 @@ export default function TopicOkoaMama() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/okoamama-activity-05" />
 
       <main>
         <TopicHero

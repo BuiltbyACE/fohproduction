@@ -2,6 +2,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
@@ -19,9 +20,9 @@ import {
 export const metadata = makeMetadata({
   path: "/topics/school-milk",
   title:
-    "A glass of milk, and a reason to stay in school | Fountain of Hope",
+    "School Milk and Nutrition in Garissa",
   description:
-    "For ten weeks, 59 ECD pupils in Nanigi Primary and 210 in Iftin Primary received milk twice a week — nutrition against child non-communicable disease, and for enrollment and retention in school. March 2019.",
+    "For ten weeks in 2019, 59 ECD pupils at Nanigi Primary and 210 at Iftin Primary received milk twice a week, for nutrition and for staying in school.",
 });
 
 const FRAMES = [
@@ -84,14 +85,14 @@ const GALLERY: {
   },
   {
     src: "/images/D1MhicqW0AAiDH_.jpg",
-    alt: "A photograph from 9 March 2019",
+    alt: "A woman in a pink headscarf greets a boy in a wheelchair during a community visit",
     tag: "9 Mar 2019",
     caption:
       "Preparation and school outreach ahead of the school milk program launch in Garissa.",
   },
   {
     src: "/images/D1JFHZDX0AMvKFT.jpg",
-    alt: "A photograph from 8 March 2019",
+    alt: "Community members and a uniformed officer gathered around a table at an office meeting",
     tag: "8 Mar 2019",
     caption:
       "Classroom engagement and school assessment during the nutrition initiative setup.",
@@ -102,6 +103,7 @@ export default function TopicSchoolMilk() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/school-milk" />
 
       <main>
         <TopicHero

@@ -2,6 +2,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import StoryCarousel from "@/components/story-carousel";
 import Gallery from "@/components/gallery";
@@ -13,9 +14,9 @@ import { CalendarIcon, MapPinIcon, UserGroupIcon } from "@/components/icons";
 export const metadata = makeMetadata({
   path: "/topics/undp-mhm-advocacy",
   title:
-    "A holistic approach in advocacy of menstrual hygiene | Fountain of Hope",
+    "Menstrual Hygiene Advocacy at UNDP Kenya",
   description:
-    "On 30 April 2018, Fountain of Hope joined the UNDP Kenya forum on a Holistic Approach in Advocacy of Menstrual Hygiene Management — an exhilarating moment for the work of keeping Garissa's girls in school.",
+    "On 30 April 2018, Fountain of Hope joined the UNDP Kenya forum on a holistic approach to menstrual hygiene advocacy, to keep Garissa's girls in school.",
 });
 
 const FRAMES = [
@@ -47,6 +48,7 @@ export default function TopicUndpMhmAdvocacy() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/undp-mhm-advocacy" />
 
       <main>
         <TopicHero
@@ -99,7 +101,7 @@ export default function TopicUndpMhmAdvocacy() {
                   The story, in a frame
                 </span>
                 <h2 className="h2">
-                  The founding year <em>takes the floor.</em>
+                  The first year <em>takes the floor.</em>
                 </h2>
               </div>
               <p className="fn-intro">
@@ -243,7 +245,7 @@ export default function TopicUndpMhmAdvocacy() {
                   girls this website’s{" "}
                   <strong>menstrual-health topic</strong> follows. That it all
                   began, in part, at a UNDP forum for{" "}
-                  <strong>holistic advocacy</strong> is the founding year made
+                  <strong>holistic advocacy</strong> is that first year made
                   visible — <strong>a Garissa cause meeting Nairobi</strong>.
                 </p>
               </div>

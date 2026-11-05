@@ -3,6 +3,7 @@ import Image from "next/image";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import RelatedTopics from "@/components/related-topics";
 import TopicCta from "@/components/topic-cta";
@@ -12,7 +13,7 @@ import { AwardIcon, MapPinIcon } from "@/components/icons";
 export const metadata = makeMetadata({
   path: "/topics/womens-award",
   title:
-    "Award for Fountain of Hope in advocacy family planning 2030 | Fountain of Hope",
+    "Family Planning Advocacy Award, Kenya",
   description:
     "A moment of recognition for Fountain of Hope's work in women's health — and the movement of women who carry it forward across Garissa.",
 });
@@ -21,6 +22,7 @@ export default function TopicWomensAward() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/womens-award" />
 
       <main>
         <TopicHero
@@ -38,7 +40,7 @@ export default function TopicWomensAward() {
               alt: "The field work behind the recognition — the Free Fistula Camp, Garissa 2019",
             },
           ]}
-          ariaLabel="Award for Fountain of Hope in advocacy family planning 2030"
+          ariaLabel="An award for Fountain of Hope's Family Planning 2030 advocacy"
           crumbsHere="Women&rsquo;s health award"
           kickerTop="RECOGNITION · WOMEN'S HEALTH"
           kickerSub="Garissa County"

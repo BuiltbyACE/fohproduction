@@ -3,6 +3,7 @@ import makeMetadata from "@/lib/seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
+import TopicJsonLd from "@/components/topic-json-ld";
 import TopicHero from "@/components/topic-hero";
 import RelatedTopics from "@/components/related-topics";
 import TopicCta from "@/components/topic-cta";
@@ -13,10 +14,9 @@ import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 
 export const metadata = makeMetadata({
   path: "/topics/family-planning",
-  title: "The child-spacing advocacy journey in Garissa | Fountain of Hope",
+  title: "Child Spacing & Family Planning, Garissa",
   description:
-    "How culturally and religiously sensitive advocacy, male involvement and county-government partnership carried Garissa County from a 5.5% modern contraceptive prevalence rate to a reported 11% in child-spacing service uptake by 2022 — an FP2020 Rapid Response Mechanism project supported by the United Nations Foundation.",
-  image: "/images/family-planning-1.jpg",
+    "Faith-sensitive family planning advocacy and male involvement took Garissa from 5.5% contraceptive prevalence to a reported 11% child-spacing uptake by 2022.",
 });
 
 const KDHS_2014 = [
@@ -308,6 +308,7 @@ export default function TopicFamilyPlanning() {
   return (
     <>
       <SiteHeader />
+      <TopicJsonLd path="/topics/family-planning" />
 
       <main>
         <TopicHero

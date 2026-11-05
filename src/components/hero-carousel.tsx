@@ -11,11 +11,11 @@ const SLIDES = [
   },
   {
     src: "/images/homehero2.jpg",
-    alt: "Fountain of Hope — photograph from the field in Garissa County",
+    alt: "Delegates on stage at the SASA Alliance launch in Nairobi",
   },
   {
     src: "/images/Gtu4Ql-WcAABazj.jpg",
-    alt: "Fountain of Hope — photograph from the field in Garissa County",
+    alt: "Group photograph of delegates at the SASA Alliance launch in Nairobi",
   },
 ];
 

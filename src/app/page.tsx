@@ -37,7 +37,7 @@ const PARTNERS = [
     logo: "/logo/jheiphgo.png",
   },
   {
-    name: "ICHR-Kenya",
+    name: "ICRH Kenya",
     role: "Reproductive Health Partner",
     logo: "/logo/ICHR.png",
   },
@@ -47,9 +47,9 @@ export const metadata = makeMetadata({
   path: "/",
   type: "website",
   title:
-    "Fountain of Hope | NGO in Garissa, Kenya — Maternal Health, Girls' Education & Family Planning",
+    "Fountain of Hope Garissa | Maternal Health NGO in Kenya",
   description:
-    "Fountain of Hope is a woman-led NGO in Garissa County, Kenya working with pastoralist communities to reduce maternal mortality, prevent gender-based violence, promote menstrual health and girls' education, and advance family planning advocacy.",
+    "Woman-led NGO in Garissa County, Kenya, working with pastoralist communities on maternal health, family planning, girls' education and GBV prevention.",
 });
 
 export default function Home() {
@@ -149,7 +149,7 @@ export default function Home() {
                 <strong>2017</strong> to give women and persons with disability
                 of Garissa County a platform to advocate for health, education
                 and community resilience. Under her leadership, the organization
-                has grown into a community rooted based organisation — engaging
+                has grown into a community-rooted organisation — engaging
                 women, men, youth and persons with disability — with a{" "}
                 <strong>2024–2029 strategic plan</strong> built on three
                 pillars: health, education, and community resilience.
