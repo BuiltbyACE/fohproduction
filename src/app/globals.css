@@ -1421,3 +1421,5 @@ footer .brand { color: #fff }
   .re-row { grid-template-columns: 1fr; gap: .15rem }
   .re-card { padding: 1.25rem }
 }
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem }
+.info-grid .btn { margin-top: 1.25rem; color: #fff; text-decoration: none }

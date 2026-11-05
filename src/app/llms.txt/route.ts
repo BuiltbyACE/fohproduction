@@ -5,6 +5,7 @@ import {
   ORG_EMAIL,
   ORG_FOCUS_AREAS,
   ORG_NAME,
+  ORG_OFFICES,
   ORG_PHONE_DISPLAY,
   ORG_URL,
   PARTNER_LINKS,
@@ -33,6 +34,8 @@ export function GET() {
     "## Official links",
     `- Website: ${base}`,
     `- Our story: ${absolute("/our-story")}`,
+    `- Support us: ${absolute("/support-us")}`,
+    `- Contact: ${absolute("/contact")}`,
     `- Sitemap: ${absolute("/sitemap.xml")}`,
     ...SOCIAL_PROFILES.map(
       (profile) => `- ${profile.name}: ${profile.url}`
@@ -66,7 +69,7 @@ export function GET() {
     "## Contact",
     `- Email: ${ORG_EMAIL}`,
     `- Phone: ${ORG_PHONE_DISPLAY}`,
-    "- Location: Garissa County, North Eastern Kenya",
+    ...ORG_OFFICES.map((office) => `- ${office.name}: ${office.display}`),
     "",
   ];
 

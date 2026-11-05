@@ -14,6 +14,7 @@ import SupportAction from "./support-action";
 import { TOPICS } from "@/lib/topics";
 import {
   ORG_EMAIL,
+  ORG_OFFICES,
   ORG_PHONE_DISPLAY,
   ORG_PHONE_TEL,
   ORG_URL,
@@ -115,6 +116,12 @@ export default function SiteFooter() {
                   Partner with us
                 </SupportAction>
               </li>
+              <li>
+                <Link href="/support-us">Support us</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact</Link>
+              </li>
             </ul>
           </nav>
 
@@ -198,10 +205,12 @@ export default function SiteFooter() {
                   {ORG_EMAIL}
                 </a>
               </div>
-              <div>
-                <MapPinIcon />
-                <span>Garissa County, North Eastern Kenya</span>
-              </div>
+              {ORG_OFFICES.map((office) => (
+                <div key={office.name}>
+                  <MapPinIcon />
+                  <span>{office.display}</span>
+                </div>
+              ))}
               <div>
                 <GlobeIcon />
                 <a

@@ -9,7 +9,7 @@ import { CloseIcon, MenuIcon } from "./icons";
 const NAV_ITEMS = [
   { label: "Topics", href: "#topics", caption: "Real stories" },
   { label: "Our story", href: "/our-story", caption: "From the ground" },
-  { label: "Contact", href: "#footer", caption: "Get in touch" },
+  { label: "Contact", href: "/contact", caption: "Get in touch" },
 ];
 
 export default function SiteHeader() {
@@ -110,8 +110,8 @@ export default function SiteHeader() {
           <div className="nav-actions">
             <Link
               className="nav-cta"
-              href={itemHref("#footer")}
-              onClick={(event) => onAnchor(event, "#footer")}
+              href="/support-us"
+              onClick={() => setOpen(false)}
             >
               Support our work
             </Link>
@@ -176,8 +176,8 @@ export default function SiteHeader() {
         <div className="mobile-drawer-footer">
           <Link
             className="drawer-cta"
-            href={itemHref("#footer")}
-            onClick={(event) => onAnchor(event, "#footer")}
+            href="/support-us"
+            onClick={() => setOpen(false)}
           >
             Support our work
           </Link>

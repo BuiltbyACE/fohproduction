@@ -21,6 +21,23 @@ export const ORG_FOUNDING_DATE = "2017";
 export const ORG_FOUNDER = "Fardosa Osman";
 export const ORG_SLOGAN = "No mother should die while giving birth.";
 
+/** Physical offices, used by the contact page, footer, JSON-LD and llms.txt. */
+export const ORG_OFFICES = [
+  {
+    name: "Garissa office",
+    display: "Garissa County, North Eastern Kenya",
+    addressLocality: "Garissa",
+    addressRegion: "Garissa County",
+  },
+  {
+    name: "Nairobi office",
+    display: "Kidgrove Court, Kilimani, Nairobi",
+    streetAddress: "Kidgrove Court, Kilimani",
+    addressLocality: "Nairobi",
+    addressRegion: "Nairobi County",
+  },
+];
+
 /** Official public organisation profiles. */
 export const ICRHK_URL = "https://www.icrhk.org";
 

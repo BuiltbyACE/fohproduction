@@ -7,6 +7,7 @@ import {
   ORG_FOUNDING_DATE,
   ORG_KEYWORDS,
   ORG_NAME,
+  ORG_OFFICES,
   ORG_PHONE_TEL,
   ORG_SLOGAN,
   ORG_URL,
@@ -87,6 +88,16 @@ export const SITE_SCHEMA = {
         addressRegion: "Garissa County",
         addressCountry: "KE",
       },
+      location: ORG_OFFICES.map(({ name, display, ...address }) => ({
+        "@type": "Place",
+        name,
+        description: display,
+        address: {
+          "@type": "PostalAddress",
+          ...address,
+          addressCountry: "KE",
+        },
+      })),
       areaServed: [
         { "@type": "Country", name: "Kenya" },
         { "@type": "AdministrativeArea", name: "Garissa County" },
