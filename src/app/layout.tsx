@@ -8,6 +8,7 @@ import {
 } from "@/lib/seo";
 import { ORG_KEYWORDS } from "@/lib/organization";
 import { SITE_SCHEMA } from "@/lib/schema";
+import Analytics from "@/components/analytics";
 import { SupportModalProvider } from "@/components/support-modal";
 import "./globals.css";
 
@@ -34,8 +35,8 @@ export const metadata: Metadata = {
   creator: "Fountain of Hope",
   publisher: "Fountain of Hope",
   icons: {
-    icon: "/icon-512.png",
-    shortcut: "/icon-512.png",
+    icon: "/icon-192.png",
+    shortcut: "/icon-192.png",
     apple: "/apple-icon.png",
   },
   manifest: "/manifest.webmanifest",
@@ -80,6 +81,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
         <div className="grain" aria-hidden="true" />
         <SupportModalProvider>{children}</SupportModalProvider>
+        <Analytics />
       </body>
     </html>
   );

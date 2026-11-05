@@ -15,8 +15,8 @@ export default function BeliefsSection() {
       <div className="wrap os-beliefs-grid">
         <Reveal className="os-beliefs-art">
           <Image
-            src="/images/2018-launch.jpeg"
-            alt="Fountain of Hope — the 2018 launch, Garissa County, Kenya"
+            src="/images/16-days-of-activism-launch-garissa-2018.jpeg"
+            alt="Launch of the 16 Days of Activism against gender-based violence (GBV) in Garissa County, 2018"
             fill
             sizes="45vw"
             loading="lazy"

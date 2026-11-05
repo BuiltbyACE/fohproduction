@@ -8,7 +8,7 @@ export const metadata = makeMetadata({
   type: "website",
   title: "Health and Education Stories from Garissa",
   description:
-    "Field stories from Fountain of Hope in Garissa, Kenya: maternal health, child spacing and family planning, girls' education and gender-based violence.",
+    "Field stories from Fountain of Hope in Garissa, Kenya: maternal health, child spacing and family planning, girls' education and GBV prevention.",
 });
 
 export default function TopicsPage() {

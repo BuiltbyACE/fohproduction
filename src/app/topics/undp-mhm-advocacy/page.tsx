@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -15,13 +16,12 @@ export const metadata = makeMetadata({
   path: "/topics/undp-mhm-advocacy",
   title:
     "Menstrual Hygiene Advocacy at UNDP Kenya",
-  description:
-    "On 30 April 2018, Fountain of Hope joined the UNDP Kenya forum on a holistic approach to menstrual hygiene advocacy, to keep Garissa's girls in school.",
+  description: TOPIC_SEO["/topics/undp-mhm-advocacy"].description,
 });
 
 const FRAMES = [
   {
-    src: "/images/DcAcKzhWAAIdprk.jpg",
+    src: "/images/women-leaders-group-photo-undp-kenya-forum.jpg",
     alt: "Fountain of Hope at the UNDP Kenya forum on advocacy of Menstrual Hygiene Management",
     caption:
       "An exhilarating moment — at the UNDP Kenya forum, for a Holistic Approach in Advocacy of Menstrual Hygiene Management.",
@@ -36,7 +36,7 @@ const GALLERY: {
   caption: string;
 }[] = [
   {
-    src: "/images/DcAcKzhWAAIdprk.jpg",
+    src: "/images/women-leaders-group-photo-undp-kenya-forum.jpg",
     alt: "At the UNDP Kenya forum on menstrual hygiene management advocacy",
     tag: "30 Apr 2018",
     caption:
@@ -54,7 +54,7 @@ export default function TopicUndpMhmAdvocacy() {
         <TopicHero
           slides={[
             {
-              src: "/images/DcAcKzhWAAIdprk.jpg",
+              src: "/images/women-leaders-group-photo-undp-kenya-forum.jpg",
               alt: "Fountain of Hope at the UNDP Kenya forum on advocacy of Menstrual Hygiene Management",
             },
           ]}

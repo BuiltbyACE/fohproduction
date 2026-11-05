@@ -24,8 +24,8 @@ export default function WorkEducation() {
       <div className="wrap os-chapter-grid os-chapter-grid--flip">
         <Reveal className="os-chapter-art">
           <Image
-            src="/images/D1jKgcmX0AYO0MH.jpg"
-            alt="Fountain of Hope — Garissa County, Kenya"
+            src="/images/school-milk-children-in-classroom-garissa.jpg"
+            alt="Children in a Garissa classroom holding up green items during a school visit"
             fill
             sizes="45vw"
             loading="lazy"

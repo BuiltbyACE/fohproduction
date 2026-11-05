@@ -11,7 +11,7 @@ export default function FutureSection() {
   return (
     <>
       <PhotoBand
-        src="/images/D7VmCi9WwAcQ2kC.jpg"
+        src="/images/free-fistula-camp-mother-and-child-garissa.jpg"
         alt="Fountain of Hope — field work in Garissa County, 2019"
         eyebrow="2024–2029"
         title={<>The story continues.</>}

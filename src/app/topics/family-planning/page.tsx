@@ -1,5 +1,6 @@
 import Image from "next/image";
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -15,8 +16,7 @@ import { PORTFOLIO_DATA } from "@/lib/portfolio-data";
 export const metadata = makeMetadata({
   path: "/topics/family-planning",
   title: "Child Spacing & Family Planning, Garissa",
-  description:
-    "Faith-sensitive family planning advocacy and male involvement took Garissa from 5.5% contraceptive prevalence to a reported 11% child-spacing uptake by 2022.",
+  description: TOPIC_SEO["/topics/family-planning"].description,
 });
 
 const KDHS_2014 = [
@@ -319,7 +319,7 @@ export default function TopicFamilyPlanning() {
             },
             {
               src: "/images/family-planning-2.jpg",
-              alt: "Family planning advocacy imagery from Fountain of Hope's child-spacing work",
+              alt: "Three people, two in blue vests, at a homestead during child spacing and family planning outreach in Garissa",
             },
           ]}
           ariaLabel="The child-spacing advocacy journey in Garissa County"
@@ -592,7 +592,7 @@ export default function TopicFamilyPlanning() {
             <div className="fp-split fp-split--flip">
               <Reveal className="fp-split-art">
                 <Image
-                  src="/images/Gtu4QgwXEAA6F00.jpg"
+                  src="/images/sasa-alliance-launch-delegates-on-stage.jpg"
                   alt="Grassroots women champions gathering to advocate for maternal and newborn health"
                   fill
                   sizes="45vw"
@@ -990,7 +990,7 @@ export default function TopicFamilyPlanning() {
             <div className="fp-split">
               <Reveal className="fp-split-art">
                 <Image
-                  src="/images/GNKt-HEWkAAT0d-.jpg"
+                  src="/images/gates-foundation-kenya-office-meeting.jpg"
                   alt="Grassroots women health champions engaging with a health partner"
                   fill
                   sizes="45vw"

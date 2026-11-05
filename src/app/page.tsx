@@ -19,27 +19,27 @@ const PARTNERS = [
   {
     name: "Government of Kenya",
     role: "National Partner",
-    logo: "/logo/government of kenya.png",
+    logo: "/logo/government-of-kenya-logo.png",
   },
   {
     name: "Government of Garissa",
     role: "County Partner",
-    logo: "/logo/governmentofGarissa.jpg",
+    logo: "/logo/garissa-county-government-logo.jpg",
   },
   {
     name: "Okoa Mama Initiative",
     role: "Maternal Health Partner",
-    logo: "/logo/okoamamalogo-removebg-preview.png",
+    logo: "/logo/okoa-mama-logo.png",
   },
   {
     name: "Jhpiego",
     role: "Health & Advocacy Partner",
-    logo: "/logo/jheiphgo.png",
+    logo: "/logo/jhpiego-logo.png",
   },
   {
     name: "ICRH Kenya",
     role: "Reproductive Health Partner",
-    logo: "/logo/ICHR.png",
+    logo: "/logo/icrh-kenya-logo.png",
   },
 ];
 
@@ -161,8 +161,8 @@ export default function Home() {
             </Reveal>
             <Reveal className="about-art">
               <Image
-                src="/images/hero page better.png"
-                alt="Fountain of Hope — Garissa, Kenya"
+                src="/images/woman-holding-newborn-baby.png"
+                alt="A woman holding a newborn baby, for Fountain of Hope's maternal health work in Garissa, Kenya"
                 fill
                 sizes="45vw"
                 loading="lazy"
@@ -181,7 +181,7 @@ export default function Home() {
 <Reveal className="founder-art">
               <div className="fi fa-big">
                 <Image
-                  src="/images/Ds7CkMLXQAAwwUi.jpg"
+                  src="/images/garissa-child-protection-unit-visit-2.jpg"
                   alt="Fardosa Osman at the Garissa Child Protection Unit, November 2018"
                   fill
                   sizes="34vw"
@@ -197,7 +197,7 @@ export default function Home() {
               </div>
               <div className="fi fa-sm">
                 <Image
-                  src="/images/Ds7CjayX4AA2Fnv.jpg"
+                  src="/images/garissa-child-protection-unit-visit-1.jpg"
                   alt="Visiting the Garissa Child Protection Unit, November 2018"
                   fill
                   sizes="18vw"
@@ -206,7 +206,7 @@ export default function Home() {
               </div>
               <div className="fi fa-sm">
                 <Image
-                  src="/images/Ds7ClYGW0AAolQn.jpg"
+                  src="/images/garissa-child-protection-unit-visit-3.jpg"
                   alt="At the Garissa Child Protection Unit, November 2018"
                   fill
                   sizes="18vw"

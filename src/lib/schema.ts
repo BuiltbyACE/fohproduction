@@ -18,6 +18,7 @@ import {
 } from "./organization";
 import { canonicalUrl, logoUrl, ogImagePath } from "./seo";
 import { TOPICS } from "./topics";
+import { TOPIC_SEO } from "./topic-seo";
 
 const slugify = (value: string) =>
   value
@@ -212,7 +213,8 @@ export const SITE_SCHEMA = {
  */
 export function topicSchema(path: string) {
   const topic = TOPICS.find((item) => item.href === path);
-  if (!topic) return null;
+  const seo = TOPIC_SEO[path];
+  if (!topic || !seo) return null;
 
   const url = canonicalUrl(path);
 
@@ -222,8 +224,9 @@ export function topicSchema(path: string) {
       {
         "@type": "Article",
         "@id": `${url}#article`,
-        headline: topic.title,
-        description: topic.description,
+        headline: seo.headline,
+        description: seo.description,
+        keywords: seo.keywords.join(", "),
         image: canonicalUrl(ogImagePath(path)),
         url,
         mainEntityOfPage: url,

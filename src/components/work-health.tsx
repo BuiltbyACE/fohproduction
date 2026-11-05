@@ -47,8 +47,8 @@ export default function WorkHealth() {
 
         <Reveal className="os-chapter-art">
           <Image
-            src="/images/health.jpeg"
-            alt="Fountain of Hope — Garissa County, Kenya"
+            src="/images/community-supplies-handover-garissa.jpeg"
+            alt="Boxed supplies being handed over at a community event in Garissa"
             fill
             sizes="45vw"
             loading="lazy"

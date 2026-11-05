@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -21,13 +22,12 @@ export const metadata = makeMetadata({
   path: "/topics/gbv-mou-signing",
   title:
     "Gender-Based Violence MoU in Garissa",
-  description:
-    "Fountain of Hope witnessed the gender-based violence MoU signed by the Garissa County and National Governments at the Child Protection Unit, November 2018.",
+  description: TOPIC_SEO["/topics/gbv-mou-signing"].description,
 });
 
 const FRAMES = [
   {
-    src: "/images/Ds7Aa2bWoAAmftC.jpg",
+    src: "/images/gbv-mou-signing-garissa-child-protection-unit.jpg",
     alt: "The signing of an MoU on gender-based violence at the Garissa Child Protection Unit",
     caption:
       "The signing — County Government of Garissa and the National Government, together on Gender-Based Violence.",
@@ -42,7 +42,7 @@ const GALLERY: {
   caption: string;
 }[] = [
   {
-    src: "/images/Ds7Aa2bWoAAmftC.jpg",
+    src: "/images/gbv-mou-signing-garissa-child-protection-unit.jpg",
     alt: "Witnessing the signing of an MoU on gender-based violence in Garissa",
     tag: "26 Nov 2018",
     caption:
@@ -60,7 +60,7 @@ export default function TopicGbvMouSigning() {
         <TopicHero
           slides={[
             {
-              src: "/images/Ds7Aa2bWoAAmftC.jpg",
+              src: "/images/gbv-mou-signing-garissa-child-protection-unit.jpg",
               alt: "The signing of an MoU on gender-based violence at the Garissa Child Protection Unit",
             },
           ]}

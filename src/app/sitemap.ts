@@ -1,3 +1,4 @@
+import { execFileSync } from "node:child_process";
 import type { MetadataRoute } from "next";
 import { TOPICS } from "@/lib/topics";
 import { CANONICAL_ORIGIN } from "@/lib/seo";
@@ -9,48 +10,50 @@ const toUrl = (path: string) => {
   return `${CANONICAL_ORIGIN}${cleanPath}`;
 };
 
+const git = (...args: string[]) =>
+  execFileSync("git", args, { encoding: "utf8", stdio: "pipe" }).trim();
+
+// A shallow clone reports its newest commit for every file, which would be a
+// false date. Without full history, lastmod is left out rather than guessed.
+function hasFullHistory() {
+  try {
+    return git("rev-parse", "--is-shallow-repository") === "false";
+  } catch {
+    return false;
+  }
+}
+
+const FULL_HISTORY = hasFullHistory();
+
+/** Date of the last commit that edited this route's page file. */
+function lastModified(path: string) {
+  if (!FULL_HISTORY) return undefined;
+  const file = path === "/" ? "src/app/page.tsx" : `src/app${path}/page.tsx`;
+  try {
+    return git("log", "-1", "--format=%cI", "--", file) || undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+const entry = (
+  path: string,
+  changeFrequency: "weekly" | "monthly",
+  priority: number,
+): MetadataRoute.Sitemap[number] => ({
+  url: toUrl(path),
+  lastModified: lastModified(path),
+  changeFrequency,
+  priority,
+});
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-
-  const home: MetadataRoute.Sitemap = [
-    {
-      url: toUrl("/"),
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: toUrl("/our-story"),
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: toUrl("/topics"),
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: toUrl("/support-us"),
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: toUrl("/contact"),
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
+  return [
+    entry("/", "weekly", 1),
+    entry("/our-story", "monthly", 0.9),
+    entry("/topics", "monthly", 0.9),
+    entry("/support-us", "monthly", 0.8),
+    entry("/contact", "monthly", 0.8),
+    ...TOPICS.map((topic) => entry(topic.href, "monthly", 0.8)),
   ];
-
-  const topics: MetadataRoute.Sitemap = TOPICS.map((topic) => ({
-    url: toUrl(topic.href),
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
-
-  return [...home, ...topics];
 }

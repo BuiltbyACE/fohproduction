@@ -7,8 +7,8 @@ export default function WhoWeAre() {
       <div className="wrap os-wwa-grid">
         <Reveal className="os-wwa-art">
           <Image
-            src="/images/GqpdGYJXcAAivls.jpg"
-            alt="Fountain of Hope — Garissa County, Kenya"
+            src="/images/woman-smiling-with-child-in-arms.jpg"
+            alt="A woman smiling with a child in her arms, for Fountain of Hope's maternal health work in Garissa"
             fill
             sizes="45vw"
             loading="lazy"

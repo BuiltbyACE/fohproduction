@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -21,27 +22,26 @@ export const metadata = makeMetadata({
   path: "/topics/free-fistula-camp",
   title:
     "Free Obstetric Fistula Camp in Garissa",
-  description:
-    "A week-long Free Fistula Camp in Garissa, May 2019: corrective obstetric fistula surgery and care, and a stand that no woman should suffer its shame.",
+  description: TOPIC_SEO["/topics/free-fistula-camp"].description,
 });
 
 const FRAMES = [
   {
-    src: "/images/D7Wde2aW0AAn6f3.jpg",
+    src: "/images/free-fistula-camp-care-package-garissa.jpg",
     alt: "Care and support at the Free Fistula Camp in Garissa",
     caption:
       "On the ground at the Free Fistula Camp — a week that changed lives.",
     meta: "Free Fistula Camp · May 2019",
   },
   {
-    src: "/images/D7WdftrXYAIEXPs.jpg",
+    src: "/images/free-fistula-camp-patient-bedside-garissa.jpg",
     alt: "The Free Fistula Camp in session in Garissa",
     caption:
       "The camp in session — women supported through corrective surgery and recovery.",
     meta: "Free Fistula Camp · May 2019",
   },
   {
-    src: "/images/D7Wdd7tW0AAP1HW.jpg",
+    src: "/images/free-fistula-camp-ward-visit-garissa.jpg",
     alt: "Marking the end of the week-long Free Fistula Camp",
     caption:
       "Marking the end of the week — and the end of a long journey for many women.",
@@ -56,31 +56,31 @@ const GALLERY: {
   caption: string;
 }[] = [
   {
-    src: "/images/D7VmCi9WwAcQ2kC.jpg",
+    src: "/images/free-fistula-camp-mother-and-child-garissa.jpg",
     alt: "The Free Fistula Camp in Garissa, May 2019",
     tag: "Free Fistula Camp · May 2019",
     caption: "The week-long Free Fistula Camp in Garissa.",
   },
   {
-    src: "/images/D7Wfh9VWkAUsz9b.jpg",
+    src: "/images/free-fistula-camp-bedside-support-garissa.jpg",
     alt: "Obstetric fistula awareness carried through the camp",
     tag: "Free Fistula Camp · May 2019",
     caption: "Obstetric fistula is preventable — the message at the heart of the week.",
   },
   {
-    src: "/images/D7Wdd7tW0AAP1HW.jpg",
+    src: "/images/free-fistula-camp-ward-visit-garissa.jpg",
     alt: "The close of the week-long Free Fistula Camp",
     tag: "Free Fistula Camp · May 2019",
     caption: "The close of the week-long camp.",
   },
   {
-    src: "/images/D7Wde2aW0AAn6f3.jpg",
+    src: "/images/free-fistula-camp-care-package-garissa.jpg",
     alt: "Care and support through the Free Fistula Camp week",
     tag: "Free Fistula Camp · May 2019",
     caption: "Care and support through the camp week.",
   },
   {
-    src: "/images/D7WdftrXYAIEXPs.jpg",
+    src: "/images/free-fistula-camp-patient-bedside-garissa.jpg",
     alt: "Women supported at the Free Fistula Camp",
     tag: "Free Fistula Camp · May 2019",
     caption: "Women served — and a community that stood with them.",
@@ -97,15 +97,15 @@ export default function TopicFreeFistulaCamp() {
         <TopicHero
           slides={[
             {
-              src: "/images/D7VmCi9WwAcQ2kC.jpg",
+              src: "/images/free-fistula-camp-mother-and-child-garissa.jpg",
               alt: "The Free Fistula Camp in Garissa, May 2019",
             },
             {
-              src: "/images/D7Wfh9VWkAUsz9b.jpg",
+              src: "/images/free-fistula-camp-bedside-support-garissa.jpg",
               alt: "Obstetric fistula awareness carried through the camp",
             },
             {
-              src: "/images/D7Wdd7tW0AAP1HW.jpg",
+              src: "/images/free-fistula-camp-ward-visit-garissa.jpg",
               alt: "Marking the end of the week-long Free Fistula Camp",
             },
           ]}

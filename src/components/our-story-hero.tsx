@@ -9,7 +9,7 @@ export default function OurStoryHero() {
     >
       <div className="os-hero-media" aria-hidden="true">
         <Image
-          src="/images/hero page better.png"
+          src="/images/woman-holding-newborn-baby.png"
           alt=""
           fill
           sizes="100vw"

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "./reveal";
 import SupportAction from "./support-action";
 import { HeartIcon } from "./icons";
@@ -19,6 +20,12 @@ export default function TopicCta({ message }: { message: string }) {
           <SupportAction type="partner" className="btn btn--ghost">
             Partner with us
           </SupportAction>
+        </div>
+        <div className="cta-links">
+          <Link href="/support-us">
+            Ways to support Fountain of Hope&apos;s work in Garissa
+          </Link>
+          <Link href="/contact">Contact our Garissa and Nairobi offices</Link>
         </div>
       </Reveal>
     </section>

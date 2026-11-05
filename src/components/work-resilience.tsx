@@ -45,8 +45,8 @@ export default function WorkResilience() {
 
         <Reveal className="os-chapter-art">
           <Image
-            src="/images/D1JFHZDX0AMvKFT.jpg"
-            alt="Fountain of Hope — Garissa County, Kenya"
+            src="/images/community-meeting-county-office-garissa.jpg"
+            alt="Community members and a uniformed officer gathered around a table at a county office meeting in Garissa"
             fill
             sizes="45vw"
             loading="lazy"

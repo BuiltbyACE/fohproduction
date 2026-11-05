@@ -7,7 +7,7 @@ export default function FounderSection() {
       <div className="wrap os-founder-grid">
         <Reveal className="os-founder-art">
           <Image
-            src="/images/Ds7CkMLXQAAwwUi.jpg"
+            src="/images/garissa-child-protection-unit-visit-2.jpg"
             alt="Fardosa Osman at the Garissa Child Protection Unit, November 2018"
             fill
             sizes="42vw"

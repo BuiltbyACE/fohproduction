@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -14,27 +15,26 @@ export const metadata = makeMetadata({
   path: "/topics/2018-the-founding-year",
   title:
     "2018: Our First Year of Activity, Garissa",
-  description:
-    "A photo archive of Fountain of Hope's first year of activity, 2018: sanitary towel donations, community courtesy calls and the seeds of the work to come.",
+  description: TOPIC_SEO["/topics/2018-the-founding-year"].description,
 });
 
 const FRAMES = [
   {
-    src: "/images/De6fJOcWkAAp3oA.jpg",
+    src: "/images/meds-sanitary-towel-donation-2018.jpg",
     alt: "Receiving sanitary towel donations at M.E.D.S.",
     caption:
       "At Mission for Essential Drugs and Supplies, receiving donations of sanitary towels for a three-year menstrual hygiene program.",
     meta: "M.E.D.S. · Jun 2018",
   },
   {
-    src: "/images/DcAezspXUAAhJxh.jpg",
+    src: "/images/garissa-muslim-youth-organization-free-iftar-tshirt.jpg",
     alt: "A woman and five men outside an office, holding up a Garissa Muslim Youth Organization Free Iftar T-shirt",
     caption:
       "Advocacy and partnership meetings in Nairobi laying the groundwork for community outreach in Garissa.",
     meta: "Apr 2018",
   },
   {
-    src: "/images/DmpP4QkXsAALI2R.jpg",
+    src: "/images/outdoor-medical-camp-patient-care.jpg",
     alt: "A clinician in a white coat attends a woman lying on a table at an outdoor medical camp as children watch",
     caption:
       "From the 2018 archive — community engagement and health advocacy.",
@@ -49,56 +49,56 @@ const GALLERY: {
   caption: string;
 }[] = [
   {
-    src: "/images/DbN55PyW0AASg_Q.jpg",
+    src: "/images/garissa-referral-hospital-maternity-ward-donation.jpg",
     alt: "Mackintosh and porridge flour donated for Garissa Referral Hospital",
     tag: "20 Apr 2018",
     caption:
       "Mackintosh and porridge flour donated for the Maternity and Paediatric wards of Garissa Referral Hospital.",
   },
   {
-    src: "/images/DcAcKzCWkAUtU7z.jpg",
+    src: "/images/six-women-at-citizen-tv-office.jpg",
     alt: "First lady county association advocating for menstrual health management",
     tag: "30 Apr 2018",
     caption:
       "First lady county association advocating for menstrual health management, child empowerment program advocacy at UNDP KE.",
   },
   {
-    src: "/images/DcAezspXUAAhJxh.jpg",
+    src: "/images/garissa-muslim-youth-organization-free-iftar-tshirt.jpg",
     alt: "A woman and five men outside an office, holding up a Garissa Muslim Youth Organization Free Iftar T-shirt",
     tag: "30 Apr 2018",
     caption:
       "Advocacy and partnership meetings in Nairobi laying the groundwork for community outreach in Garissa.",
   },
   {
-    src: "/images/De6fJOcWkAAp3oA.jpg",
+    src: "/images/meds-sanitary-towel-donation-2018.jpg",
     alt: "Receiving sanitary towel donations at M.E.D.S.",
     tag: "5 Jun 2018",
     caption:
       "“At Mission for Essential Drugs and Supplies (M.E.D.S.), receiving donations of sanitary towels as part of my 3 year program of Menstrual Hygiene Health, that targets one million boys and girls.”",
   },
   {
-    src: "/images/DktnWqbXgAAPYp6.jpg",
+    src: "/images/meeting-with-muslim-youth-organization-garissa.jpg",
     alt: "An official meeting with the Muslim Youth organization",
     tag: "16 Aug 2018",
     caption:
       "An official meeting with the Muslim Youth organization on the community initiatives Fountain of Hope was carrying.",
   },
   {
-    src: "/images/DlEck4UWsAAgsjw.jpg",
+    src: "/images/sanitary-towel-donation-women-garissa.jpg",
     alt: "Fountain of Hope and Garissa government donating sanitary towels for girls in Garissa county",
     tag: "20 Aug 2018",
     caption:
       "Fountain of Hope partners with Garissa government to donate sanitary towels for girls in Garissa county.",
   },
   {
-    src: "/images/DmpP4QkXsAALI2R.jpg",
+    src: "/images/outdoor-medical-camp-patient-care.jpg",
     alt: "A clinician in a white coat attends a woman lying on a table at an outdoor medical camp as children watch",
     tag: "9 Sep 2018",
     caption:
       "From the September 2018 archive — community advocacy and outreach in Garissa County.",
   },
   {
-    src: "/images/DqrjMGdXgAArKtB.jpg",
+    src: "/images/kangaroo-mother-care-photo-booth-garissa.jpg",
     alt: "A photo booth showcasing Kangaroo mother care with the Garissa Health team",
     tag: "29 Oct 2018",
     caption:
@@ -116,15 +116,15 @@ export default function Topic2018FoundingYear() {
         <TopicHero
           slides={[
             {
-              src: "/images/De6fJOcWkAAp3oA.jpg",
+              src: "/images/meds-sanitary-towel-donation-2018.jpg",
               alt: "Receiving sanitary towel donations at M.E.D.S.",
             },
             {
-              src: "/images/DcAezspXUAAhJxh.jpg",
+              src: "/images/garissa-muslim-youth-organization-free-iftar-tshirt.jpg",
               alt: "A woman and five men outside an office, holding up a Garissa Muslim Youth Organization Free Iftar T-shirt",
             },
             {
-              src: "/images/DmpP4QkXsAALI2R.jpg",
+              src: "/images/outdoor-medical-camp-patient-care.jpg",
               alt: "A clinician in a white coat attends a woman lying on a table at an outdoor medical camp as children watch",
             },
           ]}

@@ -5,19 +5,19 @@ const PILLARS = ["Health", "Education", "Community Resilience Building"];
 
 const PHOTOS = [
   {
-    src: "/images/Ds7CkMLXQAAwwUi.jpg",
+    src: "/images/garissa-child-protection-unit-visit-2.jpg",
     alt: "Fardosa Osman at the Garissa Child Protection Unit, November 2018",
     label: "In the field · Nov 2018",
     caption: "Fardosa Osman at the Garissa Child Protection Unit",
   },
   {
-    src: "/images/Ds7CjayX4AA2Fnv.jpg",
+    src: "/images/garissa-child-protection-unit-visit-1.jpg",
     alt: "Visiting the Garissa Child Protection Unit, November 2018",
     label: "In the field · Nov 2018",
     caption: "Visiting the Garissa Child Protection Unit",
   },
   {
-    src: "/images/Ds7ClYGW0AAolQn.jpg",
+    src: "/images/garissa-child-protection-unit-visit-3.jpg",
     alt: "At the Garissa Child Protection Unit, November 2018",
     label: "In the field · Nov 2018",
     caption:

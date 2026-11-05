@@ -16,7 +16,7 @@ export const TOPICS: Topic[] = [
     description:
       "Garissa’s health executive and its budget-makers sit at one table to deliberate maternal and newborn health — and agree the way forward together.",
     href: "/topics/okoamama-activity-05",
-    image: "/images/GyucnxiXcAA59gF.jpg",
+    image: "/images/okoa-mama-fifth-activity-county-health-leaders.jpg",
     alt: "Garissa county health leadership at the Okoa Mama na Mtoto working meeting",
   },
   {
@@ -27,7 +27,7 @@ export const TOPICS: Topic[] = [
     description:
       "Menstrual health support, dignity kits and school advocacy that keep Garissa’s girls learning.",
     href: "/topics/menstrual-health",
-    image: "/images/sanitary.jpg",
+    image: "/images/schoolgirls-with-sanitary-towels-garissa.jpg",
     alt: "Menstrual health support keeping Garissa's girls in school",
   },
   {
@@ -37,8 +37,8 @@ export const TOPICS: Topic[] = [
     description:
       "A moment of recognition for a movement that belongs to the women who carry it — and the work it represents.",
     href: "/topics/womens-award",
-    image: "/images/Award.jpg",
-    alt: "Recognition for the health of Garissa's women",
+    image: "/images/family-planning-advocacy-award-presentation.jpg",
+    alt: "Fountain of Hope receiving a family planning advocacy award certificate on stage",
   },
   {
     tag: "Health · Okoa Mama na Mtoto",
@@ -47,7 +47,7 @@ export const TOPICS: Topic[] = [
     description:
       "A workshop with ICRHk, BMG and women grassroots sets out to implement Okoa Mama na Mtoto — reducing maternal mortality, child death and morbidity, accelerating SDG 2030.",
     href: "/topics/okoa-mama-begins",
-    image: "/images/GkqZO_yWoAAWiM1.jpg",
+    image: "/images/okoa-mama-workshop-presentation-2025.jpg",
     alt: "The workshop where Okoa Mama na Mtoto first came together, February 2025",
   },
   {
@@ -57,7 +57,7 @@ export const TOPICS: Topic[] = [
     description:
       "Religious women leaders implement the second activity of Okoa Mama na Mtoto — advocating maternal and newborn health across Garissa.",
     href: "/topics/women-of-faith",
-    image: "/images/GqHG44gXMAAXca5.jpg",
+    image: "/images/women-of-faith-maternal-health-workshop-garissa.jpg",
     alt: "Religious women leaders advocating maternal and newborn health in Garissa",
   },
   {
@@ -67,7 +67,7 @@ export const TOPICS: Topic[] = [
     description:
       "The SASA Alliance launches in Nairobi to address the maternal health crisis — grassroots women champions, present to show the commitment.",
     href: "/topics/sasa-alliance",
-    image: "/images/Gtu4QgwXEAA6F00.jpg",
+    image: "/images/sasa-alliance-launch-delegates-on-stage.jpg",
     alt: "The SASA Alliance launch in Nairobi — grassroots women champions to show the commitment",
   },
   {
@@ -77,7 +77,7 @@ export const TOPICS: Topic[] = [
     description:
       "A week-long Free Fistula Camp in Garissa, May 2019 — corrective surgery and care for women living with obstetric fistula, and a stand that no woman should suffer its shame.",
     href: "/topics/free-fistula-camp",
-    image: "/images/D7VmCi9WwAcQ2kC.jpg",
+    image: "/images/free-fistula-camp-mother-and-child-garissa.jpg",
     alt: "The Free Fistula Camp in Garissa, May 2019",
   },
   {
@@ -87,7 +87,7 @@ export const TOPICS: Topic[] = [
     description:
       "A first photo-archive of 2018, the first year of activity: sanitary towel donations for a menstrual hygiene program, community courtesy calls, and the seeds of the work Garissa’s mothers and girls would build on.",
     href: "/topics/2018-the-founding-year",
-    image: "/images/De6fJOcWkAAp3oA.jpg",
+    image: "/images/meds-sanitary-towel-donation-2018.jpg",
     alt: "Fountain of Hope's first year of activity, 2018 — receiving sanitary towel donations at M.E.D.S.",
   },
   {
@@ -97,7 +97,7 @@ export const TOPICS: Topic[] = [
     description:
       "For ten weeks, 59 ECD pupils in Nanigi Primary and 210 in Iftin Primary received milk twice a week — a small intervention against child malnutrition, and for enrollment and retention in school.",
     href: "/topics/school-milk",
-    image: "/images/D1jKf6gXgAEF87A.jpg",
+    image: "/images/school-milk-pupils-in-classroom-garissa.jpg",
     alt: "School milk for ECD pupils in Nanigi and Iftin primary schools, March 2019",
   },
   {
@@ -107,7 +107,7 @@ export const TOPICS: Topic[] = [
     description:
       "Grassroots women health champions from four counties shared their experience and impact with Madam Rachel Toku-Appiah at the newly opened Bill & Melinda Gates Foundation Kenya office in Nairobi, May 2024.",
     href: "/topics/gates-foundation-champions",
-    image: "/images/GNKt-HEWkAAT0d-.jpg",
+    image: "/images/gates-foundation-kenya-office-meeting.jpg",
     alt: "Grassroots women health champions at the newly opened Bill & Melinda Gates Foundation Kenya office",
   },
   {
@@ -117,7 +117,7 @@ export const TOPICS: Topic[] = [
     description:
       "Fountain of Hope witnessed the signing of an MoU between the County Government of Garissa and the National Government on Gender-Based Violence, at the Garissa Child Protection Unit — 26 November 2018.",
     href: "/topics/gbv-mou-signing",
-    image: "/images/Ds7Aa2bWoAAmftC.jpg",
+    image: "/images/gbv-mou-signing-garissa-child-protection-unit.jpg",
     alt: "The signing of an MoU on gender-based violence at the Garissa Child Protection Unit",
   },
   {
@@ -127,7 +127,7 @@ export const TOPICS: Topic[] = [
     description:
       "On 20 April 2018, the Garissa community joined Fountain of Hope in donating Mackintosh bed covers and porridge flour to the Maternity and Pediatric Wards at Garissa Referral Hospital.",
     href: "/topics/maternity-wards-donation",
-    image: "/images/DbN55PyW0AASg_Q.jpg",
+    image: "/images/garissa-referral-hospital-maternity-ward-donation.jpg",
     alt: "Mackintosh bed covers and porridge flour donated to the Maternity and Pediatric Wards at Garissa Referral Hospital",
   },
   {
@@ -137,7 +137,7 @@ export const TOPICS: Topic[] = [
     description:
       "An exhilarating moment — Fountain of Hope at UNDP Kenya for a Holistic Approach in Advocacy of Menstrual Hygiene Management, 30 April 2018.",
     href: "/topics/undp-mhm-advocacy",
-    image: "/images/DcAcKzhWAAIdprk.jpg",
+    image: "/images/women-leaders-group-photo-undp-kenya-forum.jpg",
     alt: "Fountain of Hope at UNDP Kenya for a Holistic Approach in Advocacy of Menstrual Hygiene Management",
   },
   {

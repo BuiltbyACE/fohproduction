@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -21,27 +22,26 @@ export const metadata = makeMetadata({
   path: "/topics/school-milk",
   title:
     "School Milk and Nutrition in Garissa",
-  description:
-    "For ten weeks in 2019, 59 ECD pupils at Nanigi Primary and 210 at Iftin Primary received milk twice a week, for nutrition and for staying in school.",
+  description: TOPIC_SEO["/topics/school-milk"].description,
 });
 
 const FRAMES = [
   {
-    src: "/images/D1jKf6gXgAEF87A.jpg",
+    src: "/images/school-milk-pupils-in-classroom-garissa.jpg",
     alt: "School milk for ECD pupils in Nanigi and Iftin primary schools",
     caption:
       "The milk — twice a week, for ten weeks — for children in Nanigi and Iftin primary schools.",
     meta: "School milk · Mar 2019",
   },
   {
-    src: "/images/D1jKgcmX0AYO0MH.jpg",
+    src: "/images/school-milk-children-in-classroom-garissa.jpg",
     alt: "Children and teachers during the school milk program",
     caption:
       "Children and teachers at the center of a small, daily act of nutrition.",
     meta: "School milk · Mar 2019",
   },
   {
-    src: "/images/D1jKg_4WoAQ3tBv.jpg",
+    src: "/images/school-milk-teachers-and-parents-garissa.jpg",
     alt: "A classroom moment during the school milk program",
     caption:
       "A program built to reduce child non-communicable diseases and keep pupils learning.",
@@ -56,42 +56,42 @@ const GALLERY: {
   caption: string;
 }[] = [
   {
-    src: "/images/D1jKf6gXgAEF87A.jpg",
+    src: "/images/school-milk-pupils-in-classroom-garissa.jpg",
     alt: "School milk for ECD pupils in Nanigi and Iftin primary schools",
     tag: "13 Mar 2019",
     caption:
       "For the next ten weeks (except the holiday), 59 ECD pupils in Nanigi Primary and 210 in Iftin Primary received milk twice a week.",
   },
   {
-    src: "/images/D1jKgcmX0AYO0MH.jpg",
+    src: "/images/school-milk-children-in-classroom-garissa.jpg",
     alt: "Children and teachers during the school milk program",
     tag: "13 Mar 2019",
     caption:
       "The program aimed to reduce non-communicable diseases in children by improving nutrition — and to enhance enrollment and retention in school.",
   },
   {
-    src: "/images/D1jKg_4WoAQ3tBv.jpg",
+    src: "/images/school-milk-teachers-and-parents-garissa.jpg",
     alt: "A classroom moment during the school milk program",
     tag: "13 Mar 2019",
     caption:
       "Milk twice a week, in the classroom — nutrition and school days, hand in hand.",
   },
   {
-    src: "/images/D1jKhlPXQAAiAsI.jpg",
+    src: "/images/school-milk-handover-classroom-garissa.jpg",
     alt: "The school milk program in session",
     tag: "13 Mar 2019",
     caption:
       "One of the photographs from the post announcing the ten-week milk program.",
   },
   {
-    src: "/images/D1MhicqW0AAiDH_.jpg",
+    src: "/images/community-visit-boy-in-wheelchair.jpg",
     alt: "A woman in a pink headscarf greets a boy in a wheelchair during a community visit",
     tag: "9 Mar 2019",
     caption:
       "Preparation and school outreach ahead of the school milk program launch in Garissa.",
   },
   {
-    src: "/images/D1JFHZDX0AMvKFT.jpg",
+    src: "/images/community-meeting-county-office-garissa.jpg",
     alt: "Community members and a uniformed officer gathered around a table at an office meeting",
     tag: "8 Mar 2019",
     caption:
@@ -109,15 +109,15 @@ export default function TopicSchoolMilk() {
         <TopicHero
           slides={[
             {
-              src: "/images/D1jKf6gXgAEF87A.jpg",
+              src: "/images/school-milk-pupils-in-classroom-garissa.jpg",
               alt: "School milk for ECD pupils in Nanigi and Iftin primary schools",
             },
             {
-              src: "/images/D1jKgcmX0AYO0MH.jpg",
+              src: "/images/school-milk-children-in-classroom-garissa.jpg",
               alt: "Children and teachers during the school milk program",
             },
             {
-              src: "/images/D1jKg_4WoAQ3tBv.jpg",
+              src: "/images/school-milk-teachers-and-parents-garissa.jpg",
               alt: "A classroom moment during the school milk program",
             },
           ]}

@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Image from "next/image";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
@@ -21,8 +22,7 @@ export const metadata = makeMetadata({
   path: "/topics/menstrual-health",
   title:
     "Menstrual Health and Schooling in Garissa",
-  description:
-    "Menstrual health support and school advocacy keep Garissa's girls learning — dignity kits, education, and the fight to end period absenteeism.",
+  description: TOPIC_SEO["/topics/menstrual-health"].description,
 });
 
 export default function TopicMenstrualHealth() {
@@ -35,7 +35,7 @@ export default function TopicMenstrualHealth() {
         <TopicHero
           slides={[
             {
-              src: "/images/sanitary.jpg",
+              src: "/images/schoolgirls-with-sanitary-towels-garissa.jpg",
               alt: "Menstrual health support keeping Garissa's girls in school",
             },
           ]}
@@ -86,7 +86,7 @@ export default function TopicMenstrualHealth() {
             <div className="fn-editorial">
               <Reveal className="fn-art">
                 <Image
-                  src="/images/sanitary.jpg"
+                  src="/images/schoolgirls-with-sanitary-towels-garissa.jpg"
                   alt="Menstrual health support and girl-child education in Garissa"
                   fill
                   sizes="60vw"
@@ -244,7 +244,7 @@ export default function TopicMenstrualHealth() {
         </section>
 
         <PhotoBand
-          src="/images/De6fJOcWkAAp3oA.jpg"
+          src="/images/meds-sanitary-towel-donation-2018.jpg"
           alt="Receiving sanitary towel donations at M.E.D.S."
           eyebrow="M.E.D.S. · JUNE 2018"
           title={
@@ -265,28 +265,28 @@ export default function TopicMenstrualHealth() {
           note="The photographs that stand behind the menstrual hygiene management story. Click each one to view it full screen."
           photos={[
             {
-              src: "/images/De6fJOcWkAAp3oA.jpg",
+              src: "/images/meds-sanitary-towel-donation-2018.jpg",
               alt: "Receiving sanitary towel donations at M.E.D.S.",
               tag: "5 Jun 2018",
               caption:
                 "“Receiving donations of sanitary towels… as part of my 3 year program of Menstrual Hygiene Health, that targets one million boys and girls.”",
             },
             {
-              src: "/images/D1JXhgGWkAEBtAw.jpg",
+              src: "/images/sanitary-pads-presented-to-schoolgirls-garissa.jpg",
               alt: "Sanitary pads presented to schoolgirls in white and green hijabs at a community handover in Garissa",
               tag: "Mar 2019",
               caption:
                 "Supporting the menstrual hygiene management and girl-child education initiative in Garissa.",
             },
             {
-              src: "/images/DcAcKzCWkAUtU7z.jpg",
+              src: "/images/six-women-at-citizen-tv-office.jpg",
               alt: "Six women standing together in an office beneath a Citizen Television poster",
               tag: "30 Apr 2018",
               caption:
                 "Advocacy and partnership meetings supporting a holistic approach to Menstrual Hygiene Management.",
             },
             {
-              src: "/images/DcAezspXUAAhJxh.jpg",
+              src: "/images/garissa-muslim-youth-organization-free-iftar-tshirt.jpg",
               alt: "A woman and five men outside an office, holding up a Garissa Muslim Youth Organization Free Iftar T-shirt",
               tag: "30 Apr 2018",
               caption:

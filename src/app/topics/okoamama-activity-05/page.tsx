@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -17,34 +18,33 @@ import {
 export const metadata = makeMetadata({
   path: "/topics/okoamama-activity-05",
   title: "Maternal Health Budgeting in Garissa",
-  description:
-    "The fifth Okoa Mama na Mtoto activity: Garissa's county health leaders and Assembly budget committee members deliberate maternal and newborn health.",
+  description: TOPIC_SEO["/topics/okoamama-activity-05"].description,
 });
 
 const FRAMES = [
   {
-    src: "/images/GyucnxiXcAA59gF.jpg",
+    src: "/images/okoa-mama-fifth-activity-county-health-leaders.jpg",
     alt: "The county health leadership table at the OMMI fifth activity meeting",
     caption:
       "The table where Garissa’s maternal health sits — county health leadership, assembled.",
     meta: "Ommi activity 05 · Garissa",
   },
   {
-    src: "/images/GyucnsFXcAAyiXJ.jpg",
+    src: "/images/okoa-mama-fifth-activity-handover-2.jpg",
     alt: "Health, assembly and budget committee members in deliberation",
     caption:
       "CECM Health, Chief Officer, Director for Health — and the budget conversation begins.",
     meta: "Ommi activity 05 · Garissa",
   },
   {
-    src: "/images/GyucnnqW8AA_tBY.jpg",
+    src: "/images/okoa-mama-fifth-activity-handover-1.jpg",
     alt: "Fountain of Hope and Health Committee members at the County Assembly",
     caption:
       "Health Committee members at the Assembly — the accountability chain, in the room.",
     meta: "Ommi activity 05 · Garissa",
   },
   {
-    src: "/images/GyucnvYWIAAEYoL.jpg",
+    src: "/images/okoa-mama-fifth-activity-handover-3.jpg",
     alt: "A fruitful discussion on reducing maternal and child mortality",
     caption:
       "A fruitful discussion, deliberations agreed upon — the field note of a working meeting.",
@@ -62,19 +62,19 @@ export default function TopicOkoaMama() {
         <TopicHero
           slides={[
             {
-              src: "/images/GyucnxiXcAA59gF.jpg",
+              src: "/images/okoa-mama-fifth-activity-county-health-leaders.jpg",
               alt: "Garissa county health leadership at the OMMI fifth activity meeting",
             },
             {
-              src: "/images/GyucnsFXcAAyiXJ.jpg",
+              src: "/images/okoa-mama-fifth-activity-handover-2.jpg",
               alt: "Health, assembly and budget committee members in deliberation",
             },
             {
-              src: "/images/GyucnnqW8AA_tBY.jpg",
+              src: "/images/okoa-mama-fifth-activity-handover-1.jpg",
               alt: "Fountain of Hope and Health Committee members at the County Assembly",
             },
             {
-              src: "/images/GyucnvYWIAAEYoL.jpg",
+              src: "/images/okoa-mama-fifth-activity-handover-3.jpg",
               alt: "A fruitful discussion on reducing maternal and child mortality",
             },
           ]}

@@ -3,28 +3,28 @@ import Reveal from "./reveal";
 
 const PHOTOS = [
   {
-    src: "/images/GyucnsFXcAAyiXJ.jpg",
+    src: "/images/okoa-mama-fifth-activity-handover-2.jpg",
     alt: "Fountain of Hope and Garissa County leadership together",
     label: "Fountain of Hope · Garissa, Kenya",
     caption: "Alongside Garissa County leadership",
     big: true,
   },
   {
-    src: "/images/Ds7CkMLXQAAwwUi.jpg",
+    src: "/images/garissa-child-protection-unit-visit-2.jpg",
     alt: "Fardosa Osman at the Garissa Child Protection Unit, November 2018",
     label: "In the field · Nov 2018",
     caption: "Fardosa Osman at the Garissa Child Protection Unit",
     big: false,
   },
   {
-    src: "/images/Ds7CjayX4AA2Fnv.jpg",
+    src: "/images/garissa-child-protection-unit-visit-1.jpg",
     alt: "Visiting the Garissa Child Protection Unit, November 2018",
     label: "In the field · Nov 2018",
     caption: "Visiting the Garissa Child Protection Unit",
     big: false,
   },
   {
-    src: "/images/Ds7ClYGW0AAolQn.jpg",
+    src: "/images/garissa-child-protection-unit-visit-3.jpg",
     alt: "At the Garissa Child Protection Unit, November 2018",
     label: "In the field · Nov 2018",
     caption:

@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -17,28 +18,27 @@ import {
 
 export const metadata = makeMetadata({
   path: "/topics/okoa-mama-begins",
-  title: "How Okoa Mama na Mtoto Began",
-  description:
-    "The February 2025 workshop where ICRHk, BMG and grassroots women set out to implement Okoa Mama na Mtoto and reduce maternal and child deaths.",
+  title: "How Okoa Mama Maternal Health Work Began",
+  description: TOPIC_SEO["/topics/okoa-mama-begins"].description,
 });
 
 const FRAMES = [
   {
-    src: "/images/GkyMTgDXcAACJMF.jpg",
+    src: "/images/okoa-mama-workshop-day-two-speaker-2.jpg",
     alt: "Day two of the Okoa Mama na Mtoto planning workshop",
     caption:
       "Day two — the discussion turning a plan into practice, driven by the grassroots.",
     meta: "OMMI workshop · 25–27 Feb 2025",
   },
   {
-    src: "/images/GkqZPDXWIAA8HVg.jpg",
+    src: "/images/okoa-mama-workshop-table-session-2025.jpg",
     alt: "Women grassroots around the Okoa Mama na Mtoto planning table",
     caption:
       "Women grassroots around the table as the implementation path took shape.",
     meta: "OMMI workshop · 25–27 Feb 2025",
   },
   {
-    src: "/images/GkyMTiuXwAAZBY3.jpg",
+    src: "/images/okoa-mama-workshop-day-two-speaker-4.jpg",
     alt: "Partners joining the Okoa Mama na Mtoto conversation, day two",
     caption:
       "JHPIEGO joins the conversation — partners growing the circle.",
@@ -53,43 +53,43 @@ const GALLERY: {
   caption: string;
 }[] = [
   {
-    src: "/images/GkqZO_yWoAAWiM1.jpg",
+    src: "/images/okoa-mama-workshop-presentation-2025.jpg",
     alt: "The room where Okoa Mama na Mtoto first came together",
     tag: "OMMI workshop · Feb 2025",
     caption: "The room where Okoa Mama na Mtoto began to take shape.",
   },
   {
-    src: "/images/GkqZO_3W8AAQi8G.jpg",
+    src: "/images/okoa-mama-workshop-group-photo-2025.jpg",
     alt: "ICRHk, BMG and women grassroots at the OMMI planning table",
     tag: "OMMI workshop · Feb 2025",
     caption: "ICRHk, BMG and women grassroots around the implementation table.",
   },
   {
-    src: "/images/GkqZPC6WgAEI-3y.jpg",
+    src: "/images/okoa-mama-workshop-discussion-2025.jpg",
     alt: "Working groups shaping the Okoa Mama na Mtoto agenda",
     tag: "OMMI workshop · Feb 2025",
     caption: "From the working groups — where the initiative’s agenda was set.",
   },
   {
-    src: "/images/GkqZPDXWIAA8HVg.jpg",
+    src: "/images/okoa-mama-workshop-table-session-2025.jpg",
     alt: "Women grassroots in conversation at the OMMI workshop",
     tag: "OMMI workshop · Feb 2025",
     caption: "Women grassroots in conversation, carrying the plan into practice.",
   },
   {
-    src: "/images/GkyMTgDXcAACJMF.jpg",
+    src: "/images/okoa-mama-workshop-day-two-speaker-2.jpg",
     alt: "Day two discussion on grassroots maternal and newborn health",
     tag: "OMMI workshop · Feb 2025",
     caption: "Day two: accelerating maternal, newborn and child health at the grassroots.",
   },
   {
-    src: "/images/GkyMTgOWgAAvmJG.jpg",
+    src: "/images/okoa-mama-workshop-day-two-speaker-3.jpg",
     alt: "Focus on the details of the OMMI implementation plan",
     tag: "OMMI workshop · Feb 2025",
     caption: "Moments from the workshop floor — attention on the details that save lives.",
   },
   {
-    src: "/images/GkyMTiuXwAAZBY3.jpg",
+    src: "/images/okoa-mama-workshop-day-two-speaker-4.jpg",
     alt: "JHPIEGO joining the Okoa Mama na Mtoto conversation",
     tag: "OMMI workshop · Feb 2025",
     caption: "The circle keeps growing — a conversation that refuses to end at the table.",
@@ -106,15 +106,15 @@ export default function TopicOkoaMamaBegins() {
         <TopicHero
           slides={[
             {
-              src: "/images/GkqZO_yWoAAWiM1.jpg",
+              src: "/images/okoa-mama-workshop-presentation-2025.jpg",
               alt: "The workshop room where Okoa Mama na Mtoto first came together",
             },
             {
-              src: "/images/GkqZO_3W8AAQi8G.jpg",
+              src: "/images/okoa-mama-workshop-group-photo-2025.jpg",
               alt: "ICRHk, BMG and women grassroots at the OMMI planning workshop",
             },
             {
-              src: "/images/GkqZPC6WgAEI-3y.jpg",
+              src: "/images/okoa-mama-workshop-discussion-2025.jpg",
               alt: "Working groups shaping the Okoa Mama na Mtoto agenda",
             },
           ]}
@@ -214,7 +214,7 @@ export default function TopicOkoaMamaBegins() {
         </section>
 
         <PhotoBand
-          src="/images/GkyMTfCWUAAAJLq.jpg"
+          src="/images/okoa-mama-workshop-day-two-speaker-1.jpg"
           alt="The wider planning table on the second day of the OMMI workshop"
           eyebrow="OMMI · 25–27 February 2025"
           title={

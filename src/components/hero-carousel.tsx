@@ -6,15 +6,15 @@ import { ArrowNextIcon, ArrowPrevIcon } from "./icons";
 
 const SLIDES = [
   {
-    src: "/images/GyucnxiXcAA59gF.jpg",
+    src: "/images/okoa-mama-fifth-activity-county-health-leaders.jpg",
     alt: "Garissa county health leadership at the Okoa Mama na Mtoto working meeting",
   },
   {
-    src: "/images/homehero2.jpg",
+    src: "/images/sasa-alliance-launch-delegates-wide.jpg",
     alt: "Delegates on stage at the SASA Alliance launch in Nairobi",
   },
   {
-    src: "/images/Gtu4Ql-WcAABazj.jpg",
+    src: "/images/sasa-alliance-launch-group-photo-nairobi.jpg",
     alt: "Group photograph of delegates at the SASA Alliance launch in Nairobi",
   },
 ];

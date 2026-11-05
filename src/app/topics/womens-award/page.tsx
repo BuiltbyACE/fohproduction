@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Image from "next/image";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
@@ -13,9 +14,8 @@ import { AwardIcon, MapPinIcon } from "@/components/icons";
 export const metadata = makeMetadata({
   path: "/topics/womens-award",
   title:
-    "Family Planning Advocacy Award, Kenya",
-  description:
-    "A moment of recognition for Fountain of Hope's work in women's health — and the movement of women who carry it forward across Garissa.",
+    "Family Planning Advocacy Award, Garissa",
+  description: TOPIC_SEO["/topics/womens-award"].description,
 });
 
 export default function TopicWomensAward() {
@@ -28,15 +28,15 @@ export default function TopicWomensAward() {
         <TopicHero
           slides={[
             {
-              src: "/images/Award.jpg",
-              alt: "Recognition for Fountain of Hope's work in women's health",
+              src: "/images/family-planning-advocacy-award-presentation.jpg",
+              alt: "Fountain of Hope receiving a family planning advocacy award certificate on stage",
             },
             {
-              src: "/images/GM7Qad3W0AEjRWj.jpg",
+              src: "/images/family-planning-advocacy-award-presentation.jpg",
               alt: "The award moment — the women of Garissa whose work it honors",
             },
             {
-              src: "/images/D7VmCi9WwAcQ2kC.jpg",
+              src: "/images/free-fistula-camp-mother-and-child-garissa.jpg",
               alt: "The field work behind the recognition — the Free Fistula Camp, Garissa 2019",
             },
           ]}
@@ -84,7 +84,7 @@ export default function TopicWomensAward() {
             <div className="fn-editorial">
               <Reveal className="fn-art">
                 <Image
-                  src="/images/GM7Qad3W0AEjRWj.jpg"
+                  src="/images/family-planning-advocacy-award-presentation.jpg"
                   alt="The award moment, shared with the women who made the work possible"
                   fill
                   sizes="60vw"

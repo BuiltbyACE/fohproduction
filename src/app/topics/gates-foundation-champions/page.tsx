@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -19,27 +20,26 @@ export const metadata = makeMetadata({
   path: "/topics/gates-foundation-champions",
   title:
     "Grassroots Health Champions, Gates Kenya",
-  description:
-    "Grassroots women health champions from four counties share their impact with Rachel Toku-Appiah at the Gates Foundation's Kenya office, May 2024.",
+  description: TOPIC_SEO["/topics/gates-foundation-champions"].description,
 });
 
 const FRAMES = [
   {
-    src: "/images/GNKt-HEWkAAT0d-.jpg",
+    src: "/images/gates-foundation-kenya-office-meeting.jpg",
     alt: "The newly opened Bill & Melinda Gates Foundation Kenya office",
     caption:
       "The newly opened Bill & Melinda Gates Foundation Kenya office — a room that heard grassroots voices.",
     meta: "BMGF Kenya · 9 May 2024",
   },
   {
-    src: "/images/GNKt-HIXcAALvAW.jpg",
+    src: "/images/gates-foundation-kenya-office-conversation.jpg",
     alt: "Madam Rachel Toku-Appiah in conversation with grassroots champions",
     caption:
       "Madam Rachel Toku-Appiah — Director for Policy, Advocacy and Communications in Africa — in conversation.",
     meta: "BMGF Kenya · 9 May 2024",
   },
   {
-    src: "/images/GNKt-HYWsAADZKq.jpg",
+    src: "/images/gates-foundation-kenya-office-group-photo.jpg",
     alt: "Grassroots women health champions from four counties sharing their experience",
     caption:
       "Grassroots women health champions from four counties, sharing experience and impact.",
@@ -54,21 +54,21 @@ const GALLERY: {
   caption: string;
 }[] = [
   {
-    src: "/images/GNKt-HEWkAAT0d-.jpg",
+    src: "/images/gates-foundation-kenya-office-meeting.jpg",
     alt: "The newly opened Bill & Melinda Gates Foundation Kenya office",
     tag: "9 May 2024",
     caption:
       "The meeting was held at the newly opened Bill & Melinda Gates Foundation Kenya office.",
   },
   {
-    src: "/images/GNKt-HIXcAALvAW.jpg",
+    src: "/images/gates-foundation-kenya-office-conversation.jpg",
     alt: "Madam Rachel Toku-Appiah with grassroots women health champions",
     tag: "9 May 2024",
     caption:
       "In conversation with Madam Rachel Toku-Appiah, Director for Policy, Advocacy and Communications in Africa.",
   },
   {
-    src: "/images/GNKt-HYWsAADZKq.jpg",
+    src: "/images/gates-foundation-kenya-office-group-photo.jpg",
     alt: "Grassroots women health champions sharing experience and impact",
     tag: "9 May 2024",
     caption:
@@ -86,15 +86,15 @@ export default function TopicGatesFoundationChampions() {
         <TopicHero
           slides={[
             {
-              src: "/images/GNKt-HEWkAAT0d-.jpg",
+              src: "/images/gates-foundation-kenya-office-meeting.jpg",
               alt: "The newly opened Bill & Melinda Gates Foundation Kenya office",
             },
             {
-              src: "/images/GNKt-HIXcAALvAW.jpg",
+              src: "/images/gates-foundation-kenya-office-conversation.jpg",
               alt: "Madam Rachel Toku-Appiah with grassroots women health champions",
             },
             {
-              src: "/images/GNKt-HYWsAADZKq.jpg",
+              src: "/images/gates-foundation-kenya-office-group-photo.jpg",
               alt: "Grassroots women health champions sharing experience and impact",
             },
           ]}

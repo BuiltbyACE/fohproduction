@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -21,35 +22,34 @@ import {
 export const metadata = makeMetadata({
   path: "/topics/maternity-wards-donation",
   title:
-    "Maternity Ward Donation in Garissa, 2018",
-  description:
-    "On 20 April 2018, Fountain of Hope and the community donated Mackintosh covers and porridge flour to Garissa Referral Hospital's maternity and paediatric wards.",
+    "Maternal Health Donation in Garissa, 2018",
+  description: TOPIC_SEO["/topics/maternity-wards-donation"].description,
 });
 
 const FRAMES = [
   {
-    src: "/images/DbN55PyW0AASg_Q.jpg",
+    src: "/images/garissa-referral-hospital-maternity-ward-donation.jpg",
     alt: "Donations of Mackintosh bed covers and porridge flour for the Garissa Referral Hospital wards",
     caption:
       "Mackintosh bed covers and porridge flour — carried to the Maternity and Pediatric Wards at Garissa Referral Hospital.",
     meta: "Garissa Referral Hospital · 20 Apr 2018",
   },
   {
-    src: "/images/DbN55P3X4AEJ2em.jpg",
+    src: "/images/garissa-referral-hospital-ward-visit-with-baby.jpg",
     alt: "The community's donations being received in the maternity ward",
     caption:
       "A donation that belongs to a community that gave together.",
     meta: "Maternity Ward · 20 Apr 2018",
   },
   {
-    src: "/images/DbN55P0WsAAWSlS.jpg",
+    src: "/images/garissa-referral-hospital-donation-handover.jpg",
     alt: "Handing over the donation to the hospital",
     caption:
       "The handover — thanking the Garissa community for joining the donation.",
     meta: "20 Apr 2018",
   },
   {
-    src: "/images/DbN55P3X4AAfjsB.jpg",
+    src: "/images/garissa-referral-hospital-paediatric-ward-donation.jpg",
     alt: "Mackintosh covers and porridge flour for the pediatric ward",
     caption:
       "For the babies and the mothers — the two wards that matter most to a mother-and-child a county.",
@@ -64,28 +64,28 @@ const GALLERY: {
   caption: string;
 }[] = [
   {
-    src: "/images/DbN55PyW0AASg_Q.jpg",
+    src: "/images/garissa-referral-hospital-maternity-ward-donation.jpg",
     alt: "Mackintosh bed covers and porridge flour for the Garissa Referral Hospital wards",
     tag: "20 Apr 2018",
     caption:
       "Mackintosh bed covers and porridge flour, donated to the Maternity and Pediatric Wards at Garissa Referral Hospital.",
   },
   {
-    src: "/images/DbN55P3X4AEJ2em.jpg",
+    src: "/images/garissa-referral-hospital-ward-visit-with-baby.jpg",
     alt: "Receiving the donation in the maternity ward",
     tag: "20 Apr 2018",
     caption:
       "Mother and Child health is an important aspect of society development — the reason for the donation.",
   },
   {
-    src: "/images/DbN55P0WsAAWSlS.jpg",
+    src: "/images/garissa-referral-hospital-donation-handover.jpg",
     alt: "The community's donation at the referral hospital",
     tag: "20 Apr 2018",
     caption:
       "A thank-you to the Garissa Community for joining the donation.",
   },
   {
-    src: "/images/DbN55P3X4AAfjsB.jpg",
+    src: "/images/garissa-referral-hospital-paediatric-ward-donation.jpg",
     alt: "Supplies for the pediatric ward at Garissa Referral Hospital",
     tag: "20 Apr 2018",
     caption:
@@ -103,19 +103,19 @@ export default function TopicMaternityWardsDonation() {
         <TopicHero
           slides={[
             {
-              src: "/images/DbN55PyW0AASg_Q.jpg",
+              src: "/images/garissa-referral-hospital-maternity-ward-donation.jpg",
               alt: "Donations of Mackintosh bed covers and porridge flour for the Garissa Referral Hospital wards",
             },
             {
-              src: "/images/DbN55P3X4AEJ2em.jpg",
+              src: "/images/garissa-referral-hospital-ward-visit-with-baby.jpg",
               alt: "The community's donations being received in the maternity ward",
             },
             {
-              src: "/images/DbN55P0WsAAWSlS.jpg",
+              src: "/images/garissa-referral-hospital-donation-handover.jpg",
               alt: "Handing over the donation to the hospital",
             },
             {
-              src: "/images/DbN55P3X4AAfjsB.jpg",
+              src: "/images/garissa-referral-hospital-paediatric-ward-donation.jpg",
               alt: "Mackintosh covers and porridge flour for the pediatric ward",
             },
           ]}

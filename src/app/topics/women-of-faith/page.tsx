@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -20,27 +21,26 @@ export const metadata = makeMetadata({
   path: "/topics/women-of-faith",
   title:
     "Women of Faith: Maternal Health, Garissa",
-  description:
-    "The second Okoa Mama na Mtoto activity: religious women leaders advocate maternal and newborn health across Garissa — 4 May 2025.",
+  description: TOPIC_SEO["/topics/women-of-faith"].description,
 });
 
 const FRAMES = [
   {
-    src: "/images/GqHG44gXMAAXca5.jpg",
+    src: "/images/women-of-faith-maternal-health-workshop-garissa.jpg",
     alt: "Religious women leaders at the second OMMI activity",
     caption:
       "The women of faith, gathered — the messengers who never need a microphone.",
     meta: "OMMI activity 02 · 4 May 2025",
   },
   {
-    src: "/images/GqHG45TWoAAxtXq.jpg",
+    src: "/images/women-of-faith-group-photo-garissa.jpg",
     alt: "The gathering of religious women leaders for maternal and newborn health",
     caption:
       "A gathering that carries advocacy into every congregation that trusts it.",
     meta: "OMMI activity 02 · 4 May 2025",
   },
   {
-    src: "/images/GqHG48JWsAAOfPB.jpg",
+    src: "/images/women-of-faith-discussion-garissa.jpg",
     alt: "Religious women leaders in discussion on newborn health",
     caption:
       "The second activity in action — maternal and newborn health, spoken in the community’s own voice.",
@@ -55,25 +55,25 @@ const GALLERY: {
   caption: string;
 }[] = [
   {
-    src: "/images/GqHG44gXMAAXca5.jpg",
+    src: "/images/women-of-faith-maternal-health-workshop-garissa.jpg",
     alt: "Religious women leaders at the second OMMI activity",
     tag: "Activity 02 · May 2025",
     caption: "The women of faith gather for the second activity of Okoa Mama na Mtoto.",
   },
   {
-    src: "/images/GqHG45TWoAAxtXq.jpg",
+    src: "/images/women-of-faith-group-photo-garissa.jpg",
     alt: "The gathering of religious women leaders for maternal and newborn health",
     tag: "Activity 02 · May 2025",
     caption: "Advocating maternal and newborn health — carried in the community’s own voice.",
   },
   {
-    src: "/images/GqHG4_lWAAAPVEo.jpg",
+    src: "/images/women-of-faith-session-garissa.jpg",
     alt: "Religious women leaders engaged in the OMMI sessions",
     tag: "Activity 02 · May 2025",
     caption: "Sessions built around the leaders who take the message home.",
   },
   {
-    src: "/images/GqHG48JWsAAOfPB.jpg",
+    src: "/images/women-of-faith-discussion-garissa.jpg",
     alt: "Religious women leaders in discussion on newborn health",
     tag: "Activity 02 · May 2025",
     caption: "The conversation continues — maternal and newborn health, congregation by congregation.",
@@ -90,15 +90,15 @@ export default function TopicWomenOfFaith() {
         <TopicHero
           slides={[
             {
-              src: "/images/GqHG44gXMAAXca5.jpg",
+              src: "/images/women-of-faith-maternal-health-workshop-garissa.jpg",
               alt: "Religious women leaders at the second OMMI activity",
             },
             {
-              src: "/images/GqHG4_lWAAAPVEo.jpg",
+              src: "/images/women-of-faith-session-garissa.jpg",
               alt: "Religious women leaders engaged in the OMMI sessions",
             },
             {
-              src: "/images/GqHG48JWsAAOfPB.jpg",
+              src: "/images/women-of-faith-discussion-garissa.jpg",
               alt: "Religious women leaders in discussion on newborn health",
             },
           ]}

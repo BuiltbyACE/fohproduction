@@ -16,6 +16,7 @@ function CountUp({ to }: { to: number }) {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    el.textContent = "0";
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -41,7 +42,7 @@ function CountUp({ to }: { to: number }) {
 
   return (
     <span className="count" ref={ref}>
-      0
+      {to.toLocaleString("en-US")}
     </span>
   );
 }

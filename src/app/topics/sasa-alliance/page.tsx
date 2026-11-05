@@ -1,4 +1,5 @@
 import makeMetadata from "@/lib/seo";
+import { TOPIC_SEO } from "@/lib/topic-seo";
 import Reveal from "@/components/reveal";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
@@ -20,27 +21,26 @@ export const metadata = makeMetadata({
   path: "/topics/sasa-alliance",
   title:
     "SASA Alliance: Maternal Health in Kenya",
-  description:
-    "The SASA Alliance launches in Nairobi to address the maternal health crisis — grassroots women champions, present to show the commitment. 17–18 June 2025.",
+  description: TOPIC_SEO["/topics/sasa-alliance"].description,
 });
 
 const FRAMES = [
   {
-    src: "/images/Gtu5RrxWkAE1Zz9.jpg",
+    src: "/images/sasa-alliance-launch-partners-group-nairobi.jpg",
     alt: "Grassroots women champions at the SASA Alliance launch",
     caption:
       "Champions from Fountain of Hope, Shina Foundation and Touch alife — there to show the commitment.",
     meta: "SASA Alliance · Jun 2025",
   },
   {
-    src: "/images/Gtu5RvQW8AADpYs.jpg",
+    src: "/images/sasa-alliance-launch-delegates-wide.jpg",
     alt: "The SASA Alliance launch gathering in Nairobi",
     caption:
       "From Senegal to Tanzania, seven countries present for a continental commitment.",
     meta: "SASA Alliance · Jun 2025",
   },
   {
-    src: "/images/Gtu4QciXQAAwn1v.jpg",
+    src: "/images/sasa-alliance-launch-audience-nairobi.jpg",
     alt: "The SASA Alliance launch in Nairobi, in session",
     caption:
       "The room where a strategic alliance to reduce maternal mortality began.",
@@ -55,43 +55,43 @@ const GALLERY: {
   caption: string;
 }[] = [
   {
-    src: "/images/Gtu4QciXQAAwn1v.jpg",
+    src: "/images/sasa-alliance-launch-audience-nairobi.jpg",
     alt: "The SASA Alliance launch in Nairobi, in session",
     tag: "SASA Alliance · Jun 2025",
     caption: "The launch in session — Nairobi, June 2025.",
   },
   {
-    src: "/images/Gtu4QgwXEAA6F00.jpg",
+    src: "/images/sasa-alliance-launch-delegates-on-stage.jpg",
     alt: "Grassroots women champions present at the SASA launch",
     tag: "SASA Alliance · Jun 2025",
     caption: "Grassroots women champions, present to show the commitment.",
   },
   {
-    src: "/images/Gtu4Ql-WcAABazj.jpg",
+    src: "/images/sasa-alliance-launch-group-photo-nairobi.jpg",
     alt: "Partners gathering at the SASA Alliance launch",
     tag: "SASA Alliance · Jun 2025",
     caption: "The alliance taking shape — partners around the same table.",
   },
   {
-    src: "/images/Gtu4QfIWgAAu3y3.jpg",
+    src: "/images/sasa-alliance-launch-whiteboard-nairobi.jpg",
     alt: "Fountain of Hope and partners during the SASA Alliance launch",
     tag: "SASA Alliance · Jun 2025",
     caption: "Fountain of Hope among the organizations showing the commitment.",
   },
   {
-    src: "/images/Gtu5RrxWkAE1Zz9.jpg",
+    src: "/images/sasa-alliance-launch-partners-group-nairobi.jpg",
     alt: "Grassroots women champions from across the continent at the SASA launch",
     tag: "SASA Alliance · Jun 2025",
     caption: "Champions from FOH, Shina Foundation and Touch alife in the room.",
   },
   {
-    src: "/images/Gtu5RvQW8AADpYs.jpg",
+    src: "/images/sasa-alliance-launch-delegates-wide.jpg",
     alt: "Seven countries represented at the SASA Alliance launch",
     tag: "SASA Alliance · Jun 2025",
     caption: "Senegal to Tanzania — the countries present, with Kenya.",
   },
   {
-    src: "/images/Gtu5RwtWIAAjQgh.jpg",
+    src: "/images/sasa-alliance-launch-panel-nairobi.jpg",
     alt: "The commitment in the room at the SASA Alliance launch",
     tag: "SASA Alliance · Jun 2025",
     caption: "A moment of the launch — a commitment made in the room.",
@@ -108,15 +108,15 @@ export default function TopicSasaAlliance() {
         <TopicHero
           slides={[
             {
-              src: "/images/Gtu4QgwXEAA6F00.jpg",
+              src: "/images/sasa-alliance-launch-delegates-on-stage.jpg",
               alt: "Grassroots women champions present at the SASA launch",
             },
             {
-              src: "/images/Gtu5RwtWIAAjQgh.jpg",
+              src: "/images/sasa-alliance-launch-panel-nairobi.jpg",
               alt: "The commitment in the room at the SASA Alliance launch",
             },
             {
-              src: "/images/Gtu4Ql-WcAABazj.jpg",
+              src: "/images/sasa-alliance-launch-group-photo-nairobi.jpg",
               alt: "Partners gathering at the SASA Alliance launch",
             },
           ]}
@@ -223,7 +223,7 @@ export default function TopicSasaAlliance() {
         </section>
 
         <PhotoBand
-          src="/images/Gtu5R1xWMAAGs67.jpg"
+          src="/images/sasa-alliance-launch-speaker-nairobi.jpg"
           alt="The SASA Alliance gathering in Nairobi, June 2025"
           eyebrow="SASA ALLIANCE · NAIROBI · JUNE 2025"
           title={
