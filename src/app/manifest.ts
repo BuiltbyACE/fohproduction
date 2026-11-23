@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE_NAME, SITE_URL } from "@/lib/seo";
+import { CANONICAL_ORIGIN, SITE_NAME } from "@/lib/seo";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
@@ -23,6 +23,6 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/png",
       },
     ],
-    scope: SITE_URL,
+    scope: CANONICAL_ORIGIN,
   };
 }

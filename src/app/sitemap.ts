@@ -50,6 +50,7 @@ const entry = (
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     entry("/", "weekly", 1),
+    entry("/fountain-of-hope", "monthly", 0.9),
     entry("/our-story", "monthly", 0.9),
     entry("/topics", "monthly", 0.9),
     entry("/support-us", "monthly", 0.8),

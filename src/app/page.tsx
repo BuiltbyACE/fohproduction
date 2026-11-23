@@ -145,7 +145,8 @@ export default function Home() {
                 <em>for its women and girls.</em>
               </h2>
               <p className="lede">
-                Fardosa Osman founded Fountain of Hope in{" "}
+                Fardosa Osman founded{" "}
+                <Link href="/fountain-of-hope">Fountain of Hope</Link> in{" "}
                 <strong>2017</strong> to give women and persons with disability
                 of Garissa County a platform to advocate for health, education
                 and community resilience. Under her leadership, the organization
